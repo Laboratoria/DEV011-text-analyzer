@@ -1,0 +1,47 @@
+body {
+  place-items: center;
+  display: grid;
+  background-color: #C9E9FB;
+}
+
+h1 {
+ color: #324057;
+ font-size: 40px;
+ font-weight: bolder;
+ font-family: 'Times New Roman', Times, serif;
+ text-shadow:3px 2px 5px #454545; 
+}
+
+p {
+    align-items: end;
+    text-align: right;
+    align-content: end;
+
+    
+}
+
+[name="user-input"] {
+    width: 70%;
+    height: 60px;
+    border-radius: 10px;
+    border-color: gray;
+    box-shadow: 8px 10px 10px #454545;
+}
+
+button {
+   background-color: #6285BF;
+   border-color: transparent;
+   color: white;
+   width: 150px;
+   height: 40px;
+   border-radius: 10px;
+}
+
+ul > li {
+ width: 180px;
+ height: 30px;
+ background-color: sandybrown;
+ display: inline-block;
+ border-radius: 10px;
+
+}
