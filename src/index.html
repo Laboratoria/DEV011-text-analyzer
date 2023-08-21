@@ -5,9 +5,49 @@
   <meta charset="utf-8">
   <title>Analizador de texto</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="index.js" type="module"></script>
 </head>
 
 <body>
-  <script src="index.js" type="module"></script>
+  <div class="div-centrado">
+    
+    <!-- Header -->
+    <header>
+      <h1>Analizador de texto</h1>
+    </header>
+    <br/>
+
+    <!-- Boton para limpieza de texto -->
+    <div class="div-derecha">
+      <button id="reset-button">Limpiar texto</button>
+    </div>  
+    <br/>
+
+    <!--Input de texto-->
+    <div class="div-centrado">
+      <textarea name="user-input" rows="5"cols="70" placeholder="Inserte texto a analizar"></textarea>
+    </div> 
+    
+    <!-- Lista de elementos analizados -->
+    <div class="div-centrado"> 
+      <ul class="lista-ul">
+        <li class="lista-li" data-testid="word-count">Recuento de palabras</li>
+        <li class="lista-li" data-testid="character-count">Recuento de caracteres</li>
+        <li class="lista-li" data-testid="character-no-spaces-count">Recuento de caracteres excluyendo espacios y signos de puntuación</li>
+        <li class="lista-li" data-testid="number-count">Recuento de números</li>
+        <li class="lista-li" data-testid="number-sum">Suma total de números</li>
+        <li class="lista-li" data-testid="word-length-average">Longitud media de palabras</li>
+      </ul>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+      <p>
+        Karina Miranda Ruíz,<br/>
+        México 2023
+      </p>
+    </footer>
+
+  </div> <!-- cierra div content -->
 </body>
 </html>

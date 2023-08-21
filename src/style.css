@@ -1,0 +1,87 @@
+/*Formato geneal*/
+body{
+    font-family:segoe ui;
+    background-color: #E6FEFF;
+}
+
+/*Formato para alinear contenido del div*/
+.div-centrado{
+    align-items: center;
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    border: 3px #f6e5ff;
+    text-align: center;
+}
+.div-derecha{
+    align-items:end;
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    border: 3px #f6e5ff;
+    text-align: center;
+}
+
+/*Formato del encabezado*/
+header{
+    background-color: white;
+    color:#1E495E;
+    font-size: 20px;
+    width: 90%;
+    text-align: center;
+    border-bottom: 8px solid #27BABE; /*hace la linea gruesa*/
+}
+
+/*Formato del pie de página*/
+footer{
+    background-color: #ffffff;
+    font-size: 15px;
+    text-align: left;
+    margin: 10px;   /*este y el que sigue le dan espacio antes y despues de la linea respectivamente*/
+    padding: 10px; 
+    width: 90%;     /*ancho de la linea*/
+    border-top: 8px solid #27BABE; /*hace la linea gruesa*/
+    justify-content: right;
+    display: flex;
+    color:#1E495E;
+}
+
+/*Formato del cuadro de texto*/
+textarea[name=user-input] {
+    color: #1E495E;
+    box-shadow: 5px 5px 10px #016c71;
+    max-width: 95%;
+    padding: 10px 10px;
+    font-family: cursive;
+    border-radius: 6px;
+    font-size: 20px;
+    border: 2px solid #BC73C8;
+}
+
+/*Formato de la lista*/
+li.lista-li{
+    color: #ffffff;
+    font-size: 20px;
+    width: 70%; /*proporción con respecto del total de la pantalla*/
+    background-color: #BC73C8;
+    border-radius: 6px;   /*redondea las esquinas */
+    margin-top: .3cm; /*división entre recuadros*/
+    border: 2px solid white;
+    text-align: center;
+}
+
+/* formato de la lista centrada*/
+ul.lista-ul{ 
+    display: grid; 
+    place-items: center;
+    list-style-type: none;
+}
+
+/*Forato del boton*/
+#reset-button{
+    background-color: #5C317F;
+    color: white;
+    font-size: 22px;
+    border-radius: 6px;
+    border: 0px;
+}
