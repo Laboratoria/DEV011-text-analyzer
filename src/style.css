@@ -22,12 +22,12 @@ p {
 
 [name="user-input"] {
     width: 70%;
-    height: 60px;
+    height: 150px;
     border-radius: 10px;
     border-color: gray;
     box-shadow: 8px 10px 10px #454545;
     margin-bottom: 20px;
-    border-style: dashed;
+    ;
 }
 
 button {
@@ -37,18 +37,26 @@ button {
    font-weight: bolder;
    width: 150px;
    height: 40px;
-   
+  font-size: 15px;
    border-radius: 10px;
 } 
 
 ul > li {
- width: 180px;
+ font-weight: bold; 
+ font-family: Sans-serif;
+ width: 230px;
  height: 30px;
  background-color: sandybrown;
  display: inline-block;
- border-radius: 20px;
+ border-radius: 10px;
  margin-bottom: 10px;
  margin-left: 40px;
- border-color: #8D4125;
- border-style:dashed;
+ text-align: left;
+ padding-left: 10px;
+ padding-top: 12px;
+}
+
+
+li > p {
+ display: inline;
 }

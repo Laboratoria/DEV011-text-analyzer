@@ -8,17 +8,17 @@
   <h1>Analizador de texto</h1>
 </head>
 
-<body>
+<body >
   <script src="index.js" type="module"></script>
 
-<textarea name="user-input"></textarea>
+<textarea name="user-input" > </textarea>
 <ul>
-  <li data-testid="word-count"> </li>
-  <li data-testid="character-count"> </li>
-  <li data-testid="character-no-spaces-count"> </li>
-  <li data-testid="number-count"> </li>
-  <li data-testid="number-sum"> </li>
-  <li data-testid="word-length-average"> </li>
+  <li> Palabras: <p data-testid="word-count"></p> </li>
+  <li> Caracteres: <p data-testid="character-count"></p></li>
+  <li> Caracteres sin espacios: <p data-testid="character-no-spaces-count"></p> </li>
+  <li> Numeros: <p data-testid="number-count"></p></li>
+  <li> Suma de numeros: <p data-testid="number-sum"></p></li>
+  <li> Promedio longitud: <p data-testid="word-length-average"></p></li>
 </ul>
 
 <button id="reset-button" type="submit">Limpiar métricas</button>
