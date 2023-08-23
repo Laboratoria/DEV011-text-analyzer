@@ -44,7 +44,7 @@ const analyzer = {
     let sumNumber = 0;
     for (let i = 0; i < listaText.length; i++){
       if (!isNaN(listaText[i]/1)){
-        sumNumber += listaText[i]/1;
+        sumNumber += Number(listaText[i]);
       }
     }
     return sumNumber;  
