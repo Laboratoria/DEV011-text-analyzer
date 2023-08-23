@@ -43,7 +43,7 @@ footer{
 }
 
 /*Formato del cuadro de texto*/
-textarea[name='user-input'] {
+textarea[name="user-input"] {
     color: #1E495E;
     box-shadow: 5px 5px 10px #016c71;
     max-width: 95%;
