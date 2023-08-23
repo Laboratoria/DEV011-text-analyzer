@@ -4,23 +4,15 @@ body{
     background-color: #E6FEFF;
 }
 
-/*Formato para alinear contenido del div*/
+/*Formato para alinear contenido del div
 .div-centrado{
     align-items: center;
     display: flex;
     width: 90%;
     flex-direction: column;
-    border: 3px #f6e5ff;
+    border: 3px solid #f6e5ff;
     text-align: center;
-}
-.div-derecha{
-    align-items:end;
-    display: flex;
-    width: 90%;
-    flex-direction: column;
-    border: 3px #f6e5ff;
-    text-align: center;
-}
+}*/
 
 /*Formato del encabezado*/
 header{
@@ -30,6 +22,8 @@ header{
     width: 90%;
     text-align: center;
     border-bottom: 8px solid #27BABE; /*hace la linea gruesa*/
+    margin-left:auto;
+    margin-right:auto;
 }
 
 /*Formato del pie de página*/
@@ -44,6 +38,8 @@ footer{
     justify-content: right;
     display: flex;
     color:#1E495E;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 /*Formato del cuadro de texto*/
@@ -56,18 +52,21 @@ textarea[name=user-input] {
     border-radius: 6px;
     font-size: 20px;
     border: 2px solid #BC73C8;
+    margin-left:auto;
+    margin-right:auto;
+    display: flex;
 }
 
 /*Formato de la lista*/
 li.lista-li{
     color: #ffffff;
     font-size: 20px;
-    width: 70%; /*proporción con respecto del total de la pantalla*/
     background-color: #BC73C8;
     border-radius: 6px;   /*redondea las esquinas */
     margin-top: .3cm; /*división entre recuadros*/
     border: 2px solid white;
     text-align: center;
+    
 }
 
 /* formato de la lista centrada*/
@@ -75,6 +74,9 @@ ul.lista-ul{
     display: grid; 
     place-items: center;
     list-style-type: none;
+    width: 50%; /*proporción con respecto del total de la pantalla*/
+    margin-left:auto;
+    margin-right:auto;
 }
 
 /*Forato del boton*/
@@ -84,4 +86,5 @@ ul.lista-ul{
     font-size: 22px;
     border-radius: 6px;
     border: 0px;
+    margin-left:70%;
 }
