@@ -14,27 +14,29 @@
         <h1>Analizador de texto</h1>
     </header>
     <br>
-    <br>
-    <ul>
-        <li class="" data-testid="character-count">Caracteres: </li>
-        <li class="" data-testid="character-no-spaces-count">Caracteres sin espacio: </li>
-        <li class="" data-testid="word-count">Palabras: </li>
-        <li class="" data-testid="word-length-average">Promedio de longitud: </li>
-        <li class="" data-testid="number-count">Números: </li>
-        <li class="" data-testid="number-sum">Suma números: </li>
-    </ul>
-    <form action=" ">
-        <textarea rows="15 " cols=" " name="user-input "></textarea>
-        <br>
-        <br>
-        <br>
-        <button id="reset-button">Limpiar</button>
-    </form>
-    <br>
+    <!-- <ul>
+        
+        <li class="palabras">Palabras: </li>
+        <li class="extPalabrasProm" data-testid="word-length-average">Promedio de longitud: </li>
+        <li class="num" data-testid="number-count">Números: </li>
+        <li class="sumNum" data-testid="number-sum">Suma números: </li>
+    </ul> -->
+    <div class="contadorText">
+        <ul>
+            <div id="contador">
+                <li class="caract" data-testid="character-count">Caracteres: </li>
+            </div>
+            <div>
+                <li class="caractSinEspacio" data-testid="character-no-spaces-count">Caracteres sin espacio: </li>
+            </div>
+        </ul>
+        <textarea rows="15 " cols="80 " name="userInput"></textarea>
+        <button id="resetButton">Borrar texto</button>
+    </div>
     <footer>
         <p>Grecia Sinaí Mendieta Pichardo (greysmpich) | 2023</p>
     </footer>
-    <script src="index.js " type="module "></script>
+    <script src="index.js" type="module"></script>
 </body>
 
 </html>
