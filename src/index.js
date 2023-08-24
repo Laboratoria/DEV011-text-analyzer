@@ -6,12 +6,32 @@ import analyzer from './analyzer.js';
 //  location.href = "index.html";
 // };
 
-
-const botonCleaner = document.getElementById("reset-button")
+const botonCleaner = document.getElementById("reset-button");
 botonCleaner.addEventListener('click', function (){
   const userInputNodeClean = document.getElementsByName("user-input")[0];
   userInputNodeClean.value = "";
+  defaultValue()
 })
+
+function defaultValue(){
+  const wordCount = document.querySelector("[data-testid='word-count']");
+  wordCount.textContent = "Recuento de palabras: 0";
+
+  const characterCount = document.querySelector("li[data-testid='character-count']");
+  characterCount.textContent ="Recuento de caracteres: 0";
+
+  const characterNoSpacesCount = document.querySelector("li[data-testid='character-no-spaces-count']");
+  characterNoSpacesCount.textContent ="Recuento de caracteres excluyendo espacios y signos de puntuación: 0";
+
+  const numberCount = document.querySelector("li[data-testid='number-count']");
+  numberCount.textContent ="Recuento de números: 0";
+
+  const numberSum = document.querySelector("li[data-testid='number-sum']");
+  numberSum.textContent ="Suma total de números: 0";
+
+  const wordLengthAverage = document.querySelector("li[data-testid='word-length-average']");
+  wordLengthAverage.textContent ="Longitud media de palabras: 0";
+}
 
 document.getElementsByName("user-input")[0].addEventListener('keyup',function (){
 
