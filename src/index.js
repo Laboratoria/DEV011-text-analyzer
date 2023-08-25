@@ -1,8 +1,8 @@
 import analyzer from './analyzer.js';
 
 const mensaje = document.querySelector("textarea");
-const contadorCaract = document.getElementById("caract");
-const contadorPalabras = document.getElementById("palabras");
+const contadorCaract = document.querySelector(".caractCuenta");
+const contadorPalabras = document.querySelector(".palabrasCuenta");
 
 mensaje.addEventListener("keyup", function(e) {
     const text = e.target.value;
@@ -21,7 +21,7 @@ mensaje.addEventListener("keyup", function(e) {
 
 const btn = document.getElementById("resetButton");
 
-btn.addEventListener("click", function() { mensaje.value = " " });
+btn.addEventListener("click", function() { mensaje.value = " ", contadorCaract.innerHTML = `Caracteres: 0`, contadorPalabras.innerHTML = `Palabras: 0` });
 
 
 
