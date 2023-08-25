@@ -1,15 +1,30 @@
 import analyzer from './analyzer.js';
 
 const mensaje = document.querySelector("textarea");
-const contador = document.getElementById("contador");
+const contadorCaract = document.getElementById("caract");
+const contadorPalabras = document.getElementById("palabras");
 
 mensaje.addEventListener("keyup", function(e) {
     const text = e.target.value;
-    const contCarAct = analyzer.getCharacterCount(text);
-    //const resultado= target.value.contCarAct;
-
-    contador.innerHTML = `Caracteres: ${contCarAct}`;
+    const contActCaract = analyzer.getCharacterCount(text);
+    contadorCaract.innerHTML = `Caracteres: ${contActCaract}`;
 });
+
+mensaje.addEventListener("keyup", function(e) {
+    const text = e.target.value;
+    const contActPalabras = analyzer.getWordCount(text);
+    contadorPalabras.innerHTML = `Palabras: ${contActPalabras}`;
+});
+//mensaje.addEventListener("focus", function(e) {
+//e.target.style.background = "#FF9966";
+//});
+
+const btn = document.getElementById("resetButton");
+
+btn.addEventListener("click", function() { mensaje.value = " " });
+
+
+
 
 
 

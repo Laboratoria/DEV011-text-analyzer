@@ -10,32 +10,42 @@
 </head>
 
 <body>
-    <header>
-        <h1>Analizador de texto</h1>
-    </header>
-    <br>
-    <!-- <ul>
-        
-        <li class="palabras">Palabras: </li>
-        <li class="extPalabrasProm" data-testid="word-length-average">Promedio de longitud: </li>
-        <li class="num" data-testid="number-count">Números: </li>
-        <li class="sumNum" data-testid="number-sum">Suma números: </li>
-    </ul> -->
-    <div class="contadorText">
+    <div class="encabezado">
+        <header>
+            <h1>Analizador de texto</h1>
+        </header>
+    </div>
+    <div class="cajasMetricas">
         <ul>
-            <div id="contador">
-                <li class="caract" data-testid="character-count">Caracteres: </li>
+            <div id="caract">
+                <li data-testid="character-count">Caracteres: </li>
             </div>
-            <div>
-                <li class="caractSinEspacio" data-testid="character-no-spaces-count">Caracteres sin espacio: </li>
+            <div id="caractSinEsp">
+                <li data-testid="character-no-spaces-count">Caracteres sin espacio: </li>
+            </div>
+            <div id="palabras">
+                <li data-testid="word-count">Palabras: </li>
+            </div>
+            <div id="extPalabrasProm">
+                <li data-testid="word-length-average">Promedio de longitud: </li>
+            </div>
+            <div id="num">
+                <li data-testid="number-count">Números: </li>
+            </div>
+            <div id="sumNum">
+                <li data-testid="number-sum">Suma números: </li>
             </div>
         </ul>
+    </div>
+    <div class="cajaText">
         <textarea rows="15 " cols="80 " name="userInput"></textarea>
         <button id="resetButton">Borrar texto</button>
     </div>
-    <footer>
-        <p>Grecia Sinaí Mendieta Pichardo (greysmpich) | 2023</p>
-    </footer>
+    <div class="piePag">
+        <footer>
+            <p>Grecia Sinaí Mendieta Pichardo (greysmpich) | 2023</p>
+        </footer>
+    </div>
     <script src="index.js" type="module"></script>
 </body>
 
