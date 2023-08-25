@@ -13,18 +13,15 @@
     <header>
       <h1>Analizador de texto</h1>
     </header>
-    <br/>
-
-    <!-- Boton para limpieza de texto -->
-      <button id="reset-button" type="button" >Limpiar texto</button>
-    <br/>
-    <br/>
     
-    <!--Input de texto-->
+      <!-- Input de texto-->
       <textarea name="user-input" rows="5" cols="70" placeholder="Inserte Texto a analizar"></textarea>
     
+    <!-- Boton para limpieza de texto -->
+    <button id="reset-button" type="button" data-alignment="right">Limpiar texto</button>
+
     <!-- Lista de elementos analizados -->
-      <ul class="lista-ul">
+      <ul>
         <li class="lista-li" data-testid="word-count">Recuento de palabras: 0</li>
         <li class="lista-li" data-testid="character-count">Recuento de caracteres: 0</li>
         <li class="lista-li" data-testid="character-no-spaces-count">Recuento de caracteres excluyendo espacios y signos de puntuación: 0</li>
@@ -33,7 +30,7 @@
         <li class="lista-li" data-testid="word-length-average">Longitud media de palabras: 0</li>
       </ul>
 
-    <!-- Pie de página -->
+      <!-- Pie de página -->
     <footer>
       <p>
         Karina Miranda Ruíz,<br/>

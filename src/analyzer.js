@@ -1,9 +1,8 @@
 const analyzer = {  
   getWordCount: (text) => {
+    //TODO: esta función debe retornar el recuento de palabras que se encuentran en el parámetro `text` de tipo `string`.
     text = text.replace(/,|;|:|"|«|»|¡|¿|!|&+/g,' ');
     text = text.replace(/\u0027|\u002D|\0022|\.|\{|\}|\(|\)|\[|\]|\?|\s|\n|\t|\\|\r|\b|\f|\v+/g, ' ').replace(/\s+/g, ' ').trim();
-    //   |\!|\&|\,|\;|\:|\"|\«|\»|\¿|\¡
-    //TODO: esta función debe retornar el recuento de palabras que se encuentran en el parámetro `text` de tipo `string`.
     let n = 0;
     if (text==='' || text===" "){
       //pass n = 0;
@@ -19,18 +18,21 @@ const analyzer = {
     return n;
   },
   
+  //Esta función es la opcional que manda 0 para una entrada de texto con solo espacios vacios o caracteres de puntuación
   /*
-  getCharacterCount: (text) => {
+    getCharacterCount: (text) => {
     //TODO: esta función debe retornar el recuento de caracteres que se encuentran en el parámetro `text` de tipo `string`
-    const text2 = text.replace(/(?:[.,;:"«»{}()¿?¡!-&\s\n\t\\\r\b\f\v]+)/, ' ', ' ').trim(); 
+    let text2 = text.replace(/,|;|:|"|«|»|¡|¿|!|&+/g,' ');
+    text2 = text2.replace(/\u0027|\u002D|\0022|\.|\{|\}|\(|\)|\[|\]|\?|\s|\n|\t|\\|\r|\b|\f|\v+/g, ' ').replace(/\s+/g, ' ').trim();
     let n = 0;
-    if (text2==='' || text2===" "){
-      //pass n = 0;
-    }else{
+    if (text2===''|| text2===" "){
+      //pass n = 0
+    } else {
       n = text.length;
     }
     return n;
-  },*/
+  },
+  */
 
   getCharacterCountExcludingSpaces: (text) => {
     //TODO: esta función debe retornar el recuento de caracteres excluyendo espacios y signos de puntuación que se encuentran en el parámetro `text` de tipo `string`.
@@ -45,6 +47,7 @@ const analyzer = {
     return n;
   },
 
+  // Esta función manda el conteo de caracteres sin importar que sean sólo signos de puntuación
   /*getCharacterCountExcludingSpaces: (text) => {
     //TODO: esta función debe retornar el recuento de caracteres excluyendo espacios y signos de puntuación que se encuentran en el parámetro `text` de tipo `string`.
     const n = text.trim().split(/\s+/g).join('').length;
@@ -81,7 +84,7 @@ const analyzer = {
       //pass countNumber = 0;
     }else{
       const listaText = text.replace(/\s+/g, ' ').trim().split(' ');
-      console.log(text,text2)
+      //console.log(text,text2)
       for (let i = 0; i < listaText.length; i++){
         if (!isNaN(listaText[i]/1)){
           countNumber += 1;
