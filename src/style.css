@@ -26,9 +26,9 @@ ul {
 }
 
 .caractCuenta {
-    margin: 20px 40px;
+    margin: 20px;
     padding: 10px;
-    width: 33%;
+    width: 23%;
     border-radius: 25px;
     font-family: 'Coda';
     font-size: 14px;
@@ -37,9 +37,9 @@ ul {
 }
 
 .palabrasCuenta {
-    margin: 20px 40px;
+    margin: 20px;
     padding: 10px;
-    width: 33%;
+    width: 23%;
     border-radius: 25px;
     font-family: 'Coda';
     font-size: 14px;
