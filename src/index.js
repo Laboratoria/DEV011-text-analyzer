@@ -29,9 +29,7 @@ mensaje.addEventListener("keyup", function (e) {
 const btn = document.getElementById("resetButton");
 
 btn.addEventListener("click", function () {
-  (mensaje.value = " "),
-    (contadorCaract.innerHTML = `Caracteres: 0`),
-    (contadorPalabras.innerHTML = `Palabras: 0`);
+  (mensaje.value = " "), (contadorCaract.innerHTML = `Caracteres: 0`),  (contadorPalabras.innerHTML = `Palabras: 0`);
 });
 
 //TODO: escuchar eventos del DOM e invocar  los métodos del objeto `analyzer`
