@@ -47,6 +47,17 @@ ul {
     background-color: #CCBAD4;
 }
 
+.numCuenta{
+    margin: 20px;
+    padding: 10px;
+    width: 23%;
+    border-radius: 25px;
+    font-family: 'Coda';
+    font-size: 14px;
+    text-align: left;
+    background-color: #CCBAD4;
+}
+
 
 /*
 .caractSinEsp {
