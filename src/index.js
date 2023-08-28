@@ -1,8 +1,13 @@
 import analyzer from './analyzer.js';
 
 //TODO: escuchar eventos del DOM e invocar  los métodos del objeto `analyzer`
-const textarea = document.getElementById("textArea");
+let textArea = document.getElementsByName("user-input")[0];
 const limpiarBoton = document.getElementById("reset-button");
-limpiarBoton.addEventListener("click", function() {
-    return textarea.value = ""; // Establecer el valor del textarea como cadena vacía
+limpiarBoton.addEventListener("click", function (
+    
+) {
+    return textArea.value = ""; // Establecer el valor del textarea como cadena vacía
 });
+
+
+
