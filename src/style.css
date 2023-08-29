@@ -36,6 +36,18 @@ ul {
     background-color: #CCBAD4;
 }
 
+.caractSinEsp {
+ margin: 20px;
+    padding: 10px;
+    width: 23%;
+    border-radius: 25px;
+    font-family: 'Coda';
+    font-size: 14px;
+    text-align: left;
+    background-color: #CCBAD4;
+}
+
+
 .palabrasCuenta {
     margin: 20px;
     padding: 10px;
@@ -57,18 +69,15 @@ ul {
     text-align: left;
     background-color: #CCBAD4;
 }
-
-
-/*
-.caractSinEsp {
-    margin: 20px 40px;
-    width: 33%;
+.sumNum{margin: 20px;
+    padding: 10px;
+    width: 23%;
+    border-radius: 25px;
+    font-family: 'Coda';
+    font-size: 14px;
     text-align: left;
-    background-color: #CCBAD4;
-}
-
-*/
-
+    background-color: #CCBAD4;}
+    
 .contenedor {
     display: flex;
     flex-direction: column;
