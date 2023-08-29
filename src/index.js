@@ -9,11 +9,11 @@ const contadorMetrica = document.getElementsByClassName("metrica");
 //Monitoreamos el ingreso de characteres en tiempo real del textarea.
 textbox.addEventListener("keyup",actualizarMetricas);
 
-//Funcion que actualiza las metricas tras un evento en tiempo real.
+//Funcion que actualiza las metricas tras la deteccion de un evento en tiempo real.
 function actualizarMetricas(){
   //cuenta de characteres
   //obtenemos la metrica de
   const CharCount = analyzer.getCharacterCount(textbox.value);
-  contadorMetrica[0].textContent = "Caracteres " + CharCount;
+  contadorMetrica[0].textContent = "Caracteres: " + CharCount;
 }
 
