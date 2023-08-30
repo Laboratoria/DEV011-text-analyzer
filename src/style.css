@@ -14,7 +14,7 @@ textarea {
   box-shadow: 1px 1px 1px #da5151;
   left:30%;
    top:35%;
-   bottom:20%;
+   bottom:30%;
    width:100%;
    height:100%;
    text-align:center;
@@ -27,29 +27,35 @@ label {
 }
 
 header {
-  position: center;
-  background-color: rosybrown;
-  width: 80%;
+  height: 40px;
+  background-color: rgb(242, 142, 255);
+  width: 50%;
   color:#394C87;
+  text-align: center ;
+  left: 10%;
 }
-
+body{
+  background: #ffc2c2;
+}
 text {
   display: block;
   margin-bottom: 8px;
 }
 
 
-
-.unorder-list {
-align-items: center;
-}
-
-
-#box {
+.box {
   width: 150px;
-  height: 150px;
-  background: #da5151;
+  height: 100px;
+  background: #ffa1bc;
   margin-bottom: 05%;
   display: inline-block;
+  text-align: center;
+  margin-left: 20px;
+}
+
+.boxes {
+  margin-bottom: 05%;
+  display: inline-block;
+  text-align: center;
   
 }
