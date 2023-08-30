@@ -4,6 +4,7 @@ const mensaje = document.querySelector("textarea");
 const contadorCaract = document.querySelector(".caractCuenta");
 const contadorCaractSinEsp = document.querySelector(".caractSinEsp");
 const contadorPalabras = document.querySelector(".palabrasCuenta");
+const promedioPalabras = document.querySelector(".extPalabrasProm");
 const contadorNumeros = document.querySelector(".numCuenta");
 const sumaNumeros = document.querySelector(".sumNum");
 
@@ -27,6 +28,12 @@ mensaje.addEventListener("keyup", function (e) {
 
 mensaje.addEventListener("keyup", function (e) {
   const text = e.target.value;
+  const promedioPalabrasAct = analyzer.getAverageWordLength(text);
+  promedioPalabras.innerHTML = `Promedio de longitud: ${promedioPalabrasAct}`;
+});
+
+mensaje.addEventListener("keyup", function (e) {
+  const text = e.target.value;
   const contActNumeros = analyzer.getNumberCount(text);
   contadorNumeros.innerHTML = `Números: ${contActNumeros}`;
 });
@@ -42,7 +49,7 @@ mensaje.addEventListener("keyup", function (e) {
 const btn = document.getElementById("resetButton");
 
 btn.addEventListener("click", function () {
-  (mensaje.value = " "), (contadorCaract.innerHTML = "Caracteres: 0"),  (contadorPalabras.innerHTML = "Palabras: 0"), (contadorNumeros.innerHTML = "Números: ");
+  (mensaje.value = " "), (contadorCaract.innerHTML = "Caracteres: 0"), (contadorCaractSinEsp.innerHTML = `Caracteres sin espacio: 0`),  (contadorPalabras.innerHTML = "Palabras: 0"), (promedioPalabras.innerHTML = `Promedio de longitud: 0`), (contadorNumeros.innerHTML = "Números: 0"), (sumaNumeros.innerHTML = `Suma números: 0`);
 });
 
 //TODO: escuchar eventos del DOM e invocar  los métodos del objeto `analyzer`
