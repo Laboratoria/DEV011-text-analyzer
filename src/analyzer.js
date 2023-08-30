@@ -1,8 +1,8 @@
 const analyzer = {
   getWordCount: (text) => {
-    const words = text.split(" ");
-    const wordsNotNumbers = words.filter(element => isNaN(element));
-    return wordsNotNumbers.length;
+    const palabras = text.split(" ");
+    const palabrasNoNumeros = palabras.filter(element => isNaN(element));
+    return palabrasNoNumeros.length;
     //TODO: esta función debe retornar el recuento de palabras que se encuentran en el parámetro `text` de tipo `string`.
   },
   getCharacterCount: (text) => {
@@ -21,8 +21,8 @@ const analyzer = {
     //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.
   },
   getNumberCount: (text) => {
-    const number = text.match(/\d/g);
-    return number.length;
+    const digitos = text.match(/\d/g);
+    return digitos.length;
     //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
   },
   getNumberSum: (text) => {
