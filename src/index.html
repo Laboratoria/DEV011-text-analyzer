@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+<section>
+<header>
   <meta charset="utf-8">
   <title>Analizador de texto</title>
   <link rel="stylesheet" href="style.css" />
- 
-</head>
+  <h1>Analizador de texto</h1>
+</header>
 
 <body>
-<section>
- <h1>Analizador de texto</h1>
+
+ 
 
   <script src="index.js" type="module"></script>
 
 <textarea name="user-input"> </textarea>
 <ul>
-  <li> Palabras: <p data-testid="word-count"></p> </li>
-  <li> Caracteres: <p data-testid="character-count"></p></li>
-  <li> Caracteres sin espacios: <p data-testid="character-no-spaces-count"></p> </li>
-  <li> Números: <p data-testid="number-count"></p></li>
-  <li> Suma de números: <p data-testid="number-sum"></p></li>
-  <li> Promedio longitud de palabras: <p data-testid="word-length-average"></p></li>
+  <li class="list", data-testid="word-count"> Palabras:</li>
+  <li class="list", data-testid="character-count">Caracteres:</li>
+  <li class="list", data-testid="character-no-spaces-count"> Caracteres sin espacios: </li>
+  <li class="list", data-testid="number-count"> Números: </li>
+  <li class="list", data-testid="number-sum"> Suma de números: </li>
+  <li class="list", data-testid="word-length-average"> Promedio longitud de palabras: </li>
 </ul>
 
 <button id="reset-button" type="submit">LIMPIAR   MÉTRICAS</button>
 
-</section>
+
 
 </body>
 
 <footer>
   <p>Giselle Lopez</p>
 </footer>
-
+</section>
 </html>

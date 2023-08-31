@@ -10,6 +10,13 @@ src:url(../src/fonts/Golden\ Age\ Shad.ttf);
   font-family: boton;
   src: url(../src/fonts/1up.ttf);
 }
+header {
+background-color: transparent;
+}
+footer{
+background-color: transparent;
+}
+
 body {
   display: grid;
   background-color: white;
@@ -61,21 +68,21 @@ p {
     
 }
 
-[name="user-input"] {
+textarea[name="user-input"] {
     display: grid;
     padding: 15px;
-    width: 72%;
-    height: 150px;
+    width:70%;
+    height: 190px;
     border-width: 3px;
     border-radius: 10px;
     border-color:black;
     margin-bottom: 20px;
-   
+
     font-family: otrafuente;
     background-color: transparent;
 }
 
-button {
+#reset-button {
   display: block;
     background-color: white; 
     color: black; 
@@ -94,12 +101,12 @@ button {
    border-radius: 10px;
    margin-bottom: 40px;
 } 
-button:hover {
+#reset-button:hover {
 background-color: black;
 color: white;
 }
 
-ul > li {
+.list {
  font-weight: bold; 
  font-family: otrafuente;
  width: auto;
@@ -116,10 +123,6 @@ ul > li {
  padding-top: 12px;
  padding-bottom: 6px;
  padding-right: 12px;
+
 }
 
-
-li > p {
- display: inline;
- color: orangered;
-}
