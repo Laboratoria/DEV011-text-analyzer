@@ -1,15 +1,56 @@
+@font-face {
+  font-family: otrafuente;
+  src: url(../src/fonts/TT\ Octosquares\ Trial\ DemiBold.ttf);
+}
+@font-face{
+font-family: mifuent;
+src:url(../src/fonts/Golden\ Age\ Shad.ttf);
+}
+@font-face {
+  font-family: boton;
+  src: url(../src/fonts/1up.ttf);
+}
 body {
+  display: grid;
+  background-color: white;
+}
+@keyframes cambiar{
+  0%{background-position: 0 50%;}
+  50%{background-position: 100% 50%;}
+  100%{background-position: 0 50%;}
+}
+*{
+  margin: 0;
+  padding: 0;
+  align-content: center;
+}
+section{
   place-items: center;
   display: grid;
-  background-color: #C9E9FB;
+  width: 100%;
+  height: 100vh;
+  color: black;
+  background: linear-gradient(45deg,palegoldenrod,pink,palegreen,skyblue);
+  background-size: 400% 400%;
+  position: relative;
+  animation: cambiar 10s ease-in-out infinite;
 }
 
+
 h1 {
- color: #324057;
- font-size: 40px;
+  display: flex;
+ color: black;
+ font-size: 52px;
  font-weight: bolder;
- font-family: Sans-serif;
- text-shadow:3px 2px 5px #454545; 
+ font-family: mifuent;
+ text-align: center;
+ align-content: center;
+ display: grid;
+ margin-top: 40px;
+padding-top: 8px;
+padding-bottom: 2px;
+margin-bottom: 20px;
+
 }
 
 p {
@@ -21,42 +62,64 @@ p {
 }
 
 [name="user-input"] {
-    width: 70%;
+    display: grid;
+    padding: 15px;
+    width: 72%;
     height: 150px;
+    border-width: 3px;
     border-radius: 10px;
-    border-color: gray;
-    box-shadow: 8px 10px 10px #454545;
+    border-color:black;
     margin-bottom: 20px;
-    ;
+   
+    font-family: otrafuente;
+    background-color: transparent;
 }
 
 button {
-   background-color: #6285BF;
-   border-color: #252F54;
-   color: #252F54;
-   font-weight: bolder;
-   width: 150px;
-   height: 40px;
-  font-size: 15px;
+  display: block;
+    background-color: white; 
+    color: black; 
+    transition-duration: 0.2s;
+    cursor: pointer;
+   font-family: boton;
+   letter-spacing: 15px;
+   font-weight:800 ;
+   font-size: 18px;
+   border-color:black;
+   border-width: 4px;
+   padding-left: 10px;
+   margin-bottom: 60px;
+   width: 540px;
+   height: 50px;
    border-radius: 10px;
+   margin-bottom: 40px;
 } 
+button:hover {
+background-color: black;
+color: white;
+}
 
 ul > li {
  font-weight: bold; 
- font-family: Sans-serif;
- width: 230px;
+ font-family: otrafuente;
+ width: auto;
  height: 30px;
- background-color: sandybrown;
+ border-color: black ;
+ border-style:solid;
+ border-width: 2px;
  display: inline-block;
  border-radius: 10px;
- margin-bottom: 10px;
- margin-left: 40px;
+ margin-bottom: 20px;
+ margin-left: 10px;
  text-align: left;
  padding-left: 10px;
  padding-top: 12px;
+ padding-bottom: 6px;
+ padding-right: 12px;
 }
 
 
 li > p {
  display: inline;
+ color: orangered;
 }
