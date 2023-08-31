@@ -9,15 +9,19 @@ const analyzer = {
     return text.length;
   },
   getCharacterCountExcludingSpaces: (text) => {
-    const signosPunt = /[.,/#!$%^&*;:{}=\-_`~()""'...¿?¡!+]/g;
+    const signosPunt = /[.,/#!$%^&*;:{}=\-_`~()""'...¿?¡!+<>¬|]/g;
     const textoSinEspacio = text.replace(signosPunt, "").replace(/\s/g, "");
   
     return textoSinEspacio.length;
   },
   getAverageWordLength: (text) => {
-    const palabras = text.split(" ");
-        
-    let longitudes = [];
+    const cifras = /\b\d+(\.\d+)?\b/g;
+    const signosPunt = /[.,/#!$%^&*;:{}=\-_`~()""'...¿?¡!+<>¬|]/g;
+    const palabrasSinCifras = text.replace(cifras, "").replace(signosPunt, "");
+    const textoSinEspacios = palabrasSinCifras.trim();
+    const palabras = textoSinEspacios.split(" ");
+          
+    const longitudes = [];
 
     for (let indice = 0; indice < palabras.length; indice++) {
       const palabra = palabras[indice];
@@ -28,20 +32,22 @@ const analyzer = {
     const sumaLongitudes = longitudes.reduce((total, longitud) => total + longitud, 0);
     const media = sumaLongitudes / longitudes.length;
     
-    return media.toFixed(1);
+    return media.toFixed(2);
   },
   getNumberCount: (text) => {
-    const digitos = text.match(/\d/g);
-    return digitos ? digitos.length: 0;
+    const cifras = text.match(/\b\d+(\.\d+)?\b/g);
+    return cifras ? cifras.length: 0;
   },
   getNumberSum: (text) => {
-    let numeros = 0;
-    for (let indice = 0; indice < text.length; indice++) {
-      if (!isNaN(Number(text[indice]))) {
-        numeros += Number(text[indice]);
+    const cifras = text.match(/\b\d+(\.\d+)?\b/g);
+    
+    let sumaNumeros = 0;
+    if (cifras) {
+      for (let indice = 0; indice < cifras.length; indice++) {
+        sumaNumeros += parseFloat(cifras[indice]);
       }
     }
-    return numeros;
+    return sumaNumeros;
   },
 }
 export default analyzer;
