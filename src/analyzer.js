@@ -4,6 +4,7 @@ const analyzer = {
     const vari = /[\s\r\n]+/g
     const palabras = text.replace(/[.,;?¿!¡{}:'"/-1234567890]/gi,"").trim().split(vari);
     if (palabras[0]==="") {
+      
       return 0
     }
     else { 
