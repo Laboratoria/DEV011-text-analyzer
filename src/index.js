@@ -13,13 +13,20 @@ botonReset.addEventListener("click", limpiarTexto)
 
 //Funcion que actualiza las metricas tras la deteccion de un evento en tiempo real.
 function actualizarMetricas(){
+  //obtenemos la metrica de palabras con uso del objeto analyzer
+  const WordCount = analyzer.getWordCount(textbox.value);
+  contadoresMetrica[0].textContent = "Palabras: " + WordCount;
+  
   //cuenta de characteres
   //obtenemos la metrica de caracteres con uso del objeto analyzer
   const CharCount = analyzer.getCharacterCount(textbox.value);
-  contadoresMetrica[0].textContent = "Caracteres: " + CharCount;
+  contadoresMetrica[1].textContent = "Caracteres: " + CharCount;
+  
   //obtenemos la metrica de caracteres con uso del objeto analyzer
   const CharCountExSpace = analyzer.getCharacterCountExcludingSpaces(textbox.value);
-  contadoresMetrica[1].textContent = "Caracteres Sin Espacios: " + CharCountExSpace;
+  contadoresMetrica[2].textContent = "Caracteres Sin Espacios: " + CharCountExSpace;
+  
+  
 }
 
 function limpiarTexto(){
