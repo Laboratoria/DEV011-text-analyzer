@@ -5,16 +5,14 @@
     <meta charset="utf-8">
     <title>Analizador de texto</title>
     <link rel="stylesheet" href="style.css" />
-    <link href='https://fonts.googleapis.com/css?family=Kodchasan' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Kodchasan" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Coda&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <div class="encabezado">
-        <header>
-            <h1>Analizador de texto</h1>
-        </header>
-    </div>
+<body class="fondo">
+    <header>
+        <h1>Analizador de texto</h1>
+    </header>
     <div class="cajasMetricas">
         <ul>
             <li class="caractCuenta" data-testid="character-count">Caracteres: </li>
@@ -26,8 +24,8 @@
         </ul>
     </div>
     <div class="contenedor">
-        <textarea rows="15 " cols="80 " name="user-input"></textarea>
-        <button id="resetButton">Borrar texto</button>
+        <textarea rows="10 " cols="80 " name="user-input" placeholder="Escribe o pega tu texto aquí"></textarea>
+        <button id="reset-button">Borrar texto</button>
     </div>
     <div class="piePag">
         <footer>

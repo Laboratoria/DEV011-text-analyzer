@@ -46,10 +46,10 @@ mensaje.addEventListener("keyup", function (e) {
   sumaNumeros.innerHTML = `Suma números: ${sumaNumerosAct}`;
 });
 
-const btn = document.getElementById("resetButton");
+const btn = document.getElementById("reset-button");
 
 btn.addEventListener("click", function () {
-  (mensaje.value = " "), (contadorCaract.innerHTML = "Caracteres: 0"), (contadorCaractSinEsp.innerHTML = `Caracteres sin espacio: 0`),  (contadorPalabras.innerHTML = "Palabras: 0"), (promedioPalabras.innerHTML = `Promedio de longitud: 0`), (contadorNumeros.innerHTML = "Números: 0"), (sumaNumeros.innerHTML = `Suma números: 0`);
+  (mensaje.value = ""), (contadorCaract.innerHTML = "Caracteres: 0"), (contadorCaractSinEsp.innerHTML = "Caracteres sin espacio: 0"), (contadorPalabras.innerHTML = "Palabras: 0"), (promedioPalabras.innerHTML = "Promedio de longitud: 0"), (contadorNumeros.innerHTML = "Números: 0"), (sumaNumeros.innerHTML = "Suma números: 0");
 });
 
 //TODO: escuchar eventos del DOM e invocar  los métodos del objeto `analyzer`
