@@ -9,29 +9,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Coda&display=swap" rel="stylesheet">
 </head>
 
-<body class="fondo">
+<body>
     <header>
         <h1>Analizador de texto</h1>
     </header>
-    <div class="cajasMetricas">
-        <ul>
-            <li class="caractCuenta" data-testid="character-count">Caracteres: </li>
-            <li class="caractSinEsp" data-testid="character-no-spaces-count">Caracteres sin espacio: </li>
-            <li class="palabrasCuenta" data-testid="word-count">Palabras: </li>
-            <li class="extPalabrasProm" data-testid="word-length-average">Promedio de longitud: </li>
-            <li class="numCuenta" data-testid="number-count">Números: </li>
-            <li class="sumNum" data-testid="number-sum">Suma números: </li>
-        </ul>
-    </div>
-    <div class="contenedor">
-        <textarea rows="10 " cols="80 " name="user-input" placeholder="Escribe o pega tu texto aquí"></textarea>
-        <button id="reset-button">Borrar texto</button>
-    </div>
-    <div class="piePag">
-        <footer>
-            <p>Grecia Sinaí Mendieta Pichardo (greysmpich) | 2023</p>
-        </footer>
-    </div>
+    <ul>
+        <li class="caractCuenta" data-testid="character-count">Caracteres: </li>
+        <li class="caractSinEsp" data-testid="character-no-spaces-count">Caracteres sin espacio: </li>
+        <li class="palabrasCuenta" data-testid="word-count">Palabras: </li>
+        <li class="extPalabrasProm" data-testid="word-length-average">Promedio de longitud: </li>
+        <li class="numCuenta" data-testid="number-count">Números: </li>
+        <li class="sumNum" data-testid="number-sum">Suma números: </li>
+    </ul>
+    <textarea rows="10 " cols="80 " name="user-input" placeholder="Escribe o pega tu texto aquí"></textarea>
+    <button id="reset-button">Borrar texto</button>
+    <footer>
+        <p>Grecia Sinaí Mendieta Pichardo (greysmpich) | 2023</p>
+    </footer>
     <script src="index.js" type="module"></script>
 </body>
 

@@ -1,7 +1,7 @@
 *{
     margin:0px;
 }
-.fondo{
+body{
     background-color: honeydew;
 }
 header {
@@ -27,12 +27,6 @@ ul {
     padding: 10px;
     width: 60%;
     border: 0px;
-    justify-self: right;
-    border-radius: 25px;
-    background-color: #CCBAD4;
-    text-align: left;
-    font-family: 'Coda';
-    font-size: 13px;
 }
 
 .caractSinEsp {
@@ -40,20 +34,55 @@ ul {
     padding: 10px;
     width: 60%;
     border: 0px;
-    border-radius: 25px;
-    background-color: #CCBAD4;
-    text-align: left;
-    font-family: 'Coda';
-    font-size: 13px;
-    }
-
+}
 
 .palabrasCuenta {
     margin: 10px;
     padding: 10px;
     width: 60%;
-    justify-self:left;
     border: 0px;
+}
+
+.extPalabrasProm{
+    margin: 10px;
+    padding: 10px;
+    width: 60%;
+    border: 0px;
+}
+
+.numCuenta{
+    margin: 10px;
+    padding: 10px;
+    width: 60%;
+    border: 0px;
+}
+
+.sumNum{
+    margin: 10px;
+    padding: 10px;
+    width: 60%;
+    border: 0px;
+}
+
+.caractCuenta {
+    justify-self: right;
+    border-radius: 25px;
+    background-color: #CCBAD4;
+    text-align: left;
+    font-family: 'Coda';
+    font-size: 13px;
+}   
+
+.caractSinEsp {
+    border-radius: 25px;
+    background-color: #CCBAD4;
+    text-align: left;
+    font-family: 'Coda';
+    font-size: 13px;
+}
+
+.palabrasCuenta {
+    justify-self:left;
     border-radius: 25px;
     background-color: #CCBAD4;
     text-align: left;
@@ -62,11 +91,7 @@ ul {
 }
 
 .extPalabrasProm{
-    margin: 10px;
-    padding: 10px;
-    width: 60%;
     justify-self: right;
-    border: 0px;
     border-radius: 25px;
     background-color: #CCBAD4;
     text-align: left;
@@ -75,39 +100,27 @@ ul {
 }
 
 .numCuenta{
-    margin: 10px;
-    padding: 10px;
-    width: 60%;
-    border: 0px;
     border-radius: 25px;
     background-color: #CCBAD4;
     text-align: left;
     font-family: 'Coda';
     font-size: 13px;
 }
+
 .sumNum{
-    margin: 10px;
-    padding: 10px;
-    width: 60%;
     justify-self:left;
-    border: 0px;
     border-radius: 25px;
     background-color: #CCBAD4;
     text-align: left;
     font-family: 'Coda';
     font-size: 13px;
-}
-    
-.contenedor {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 20px 150px;
 }
 
 textarea[name="user-input"] {
-    margin: 0 ;
+    display: block;
     padding: 20px;
+    width: 900px;
+    margin: 20px auto;
     border: ridge;
     border-color: #CCBAD4;
     border-radius: 25px;
@@ -119,7 +132,7 @@ textarea[name="user-input"] {
     display: block;
     padding: 5px;
     width: 200px;
-    margin: 20px auto;
+    margin: 25px auto;
     height: 40px;
     border: none;
     border-radius: 25px;
@@ -131,12 +144,14 @@ textarea[name="user-input"] {
 }
 
 #reset-button:hover {
-    background-color: #C0E1F4;
+    background-color: #f8bc07;
+    color:whitesmoke;
 }
 
 footer {
     position:sticky;
-    padding: 5px 0;
+    margin-bottom: 0;
+    padding: 10px 0;
     width: 100%;    
     background-color: #007070;
     color: beige;
