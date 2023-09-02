@@ -12,29 +12,39 @@
   <h1>Analizador de texto</h1>
 </header>
 
-<body>
-
+<body background=Brick-pattern-19.png>
 
   <ul class="boxes">
-      <li data-testid="word count" class="box">Recuento de palabras
-        <p class="word-counter">0</p>
-      </li>
-      <li data-testid="character-count" class="box">Recuento de caracteres</li>
-      <li data-testid="character-no-spaces-count"class="box">Recuento de caracteres excluyendo espacios y signos de puntuación</li>
-      <li data-testid="number-count"class="box">Recuento de números</li>
-      <li data-testid="number-sum"class="box">Suma total de números</li>
-      <li data-testid="word-length-average"class="box"> Longitud media de palabras</li>
+    <li data-testid="word-count" class="box">Recuento de palabras
+      <p class="word-counter">0</p>
+    </li>
+    <li data-testid="character-count" class="box">Recuento de caracteres
+      <p class="character-count">0</p>
+    </li>
 
+    <li data-testid="character-no-spaces-count" class="box">Recuento de caracteres excluyendo espacios y signos de
+      puntuación
+      <p class="character-no-spaces-count">0</p>
+    </li>
+    <li data-testid="number-count" class="box">Recuento de números
+      <p class="number-count">0</p>
+    </li>
+    <li data-testid="number-sum" class="box">Suma total de números
+      <p class="number-sum">0</p>
+    </li>
+    <li data-testid="word-length-average" class="box"> Longitud media de palabras
+      <p class="word-lenght-average">0</p>
+    </li>
   </ul>
 
-</body>
-<label for="story">Ingresar texto</label>
+   <label for="story">Ingresar texto</label>
 
-<textarea name="user-input" rows="1" cols="33" value="text-area">
-</textarea> 
-<div>
-  <button id="reset-button">Limpiar</button>
-</div>
+  <textarea name="user-input" rows="1" cols="33" value="text-area">
+</textarea>
+   <div>
+    <button id="reset-button">Limpiar</button>
+   </div>
+ </body>
 <footer>
 
   <p>
