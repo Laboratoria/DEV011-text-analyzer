@@ -60,13 +60,7 @@ margin-bottom: 20px;
 
 }
 
-p {
-    align-items: end;
-    text-align: right;
-    align-content: end;
 
-    
-}
 
 textarea[name="user-input"] {
     display: grid;

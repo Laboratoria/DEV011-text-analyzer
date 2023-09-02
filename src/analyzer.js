@@ -24,12 +24,14 @@ const analyzer = {
   getCharacterCountExcludingSpaces: (text) => {
     //TODO: esta función debe retornar el recuento de caracteres excluyendo espacios y signos de puntuación que se encuentran en el parámetro `text` de tipo `string`.
     const caraSig = text.replace(/[.,; ?¿!¡{}:'"-]/gi,"").split("");
+  
     if (caraSig[0]==="") {
       return 0
     }
     else { 
       return caraSig.length
     }
+   
   },
   getAverageWordLength: (text) => {    
     //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.
