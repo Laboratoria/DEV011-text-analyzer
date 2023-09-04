@@ -8,7 +8,7 @@ header {
     margin: 10px 5px 20px 5px;
     text-align: center;
     font-family: 'Kodchasan';
-    color:#D92B7C;
+    color:#EC5B68;
     font-size: 30px;
 }
 
@@ -22,7 +22,7 @@ ul {
     grid-template-rows: repeat(2, auto);
 }
 
-.caractCuenta {
+.caractCuenta, .caractSinEsp, .palabrasCuenta, .extPalabrasProm, .numCuenta, .sumNum {
     margin: 10px;
     padding: 10px;
     width: 60%;
@@ -30,119 +30,57 @@ ul {
     color:honeydew;
 }
 
-.caractSinEsp {
-    margin: 10px;
-    padding: 10px;
-    width: 60%;
-    border: 0px;
-    color:honeydew;
-}
-
-.palabrasCuenta {
-    margin: 10px;
-    padding: 10px;
-    width: 60%;
-    border: 0px;
-    color:honeydew;
-}
-
-.extPalabrasProm{
-    margin: 10px;
-    padding: 10px;
-    width: 60%;
-    border: 0px;
-    color:honeydew;
-}
-
-.numCuenta{
-    margin: 10px;
-    padding: 10px;
-    width: 60%;
-    border: 0px;
-    color:honeydew;
-}
-
-.sumNum{
-    margin: 10px;
-    padding: 10px;
-    width: 60%;
-    border: 0px;
-    color:honeydew;
-}
-
-.caractCuenta {
+.caractCuenta, .extPalabrasProm {
     justify-self: right;
     border-radius: 25px;
-    background-color: #CCBAD4;
+    background-color: #C978B2;
     text-align: left;
     font-family: 'Coda';
-    font-size: 13px;
+    font-size: 14px;
 }   
 
-.caractSinEsp {
+.caractSinEsp, .numCuenta {
     border-radius: 25px;
-    background-color: #CCBAD4;
+    background-color: #C978B2;
     text-align: left;
     font-family: 'Coda';
-    font-size: 13px;
+    font-size: 14px;
 }
 
-.palabrasCuenta {
+.palabrasCuenta, .sumNum {
     justify-self:left;
     border-radius: 25px;
-    background-color: #CCBAD4;
+    background-color: #C978B2;
     text-align: left;
     font-family: 'Coda';
-    font-size: 13px;
-}
-
-.extPalabrasProm{
-    justify-self: right;
-    border-radius: 25px;
-    background-color: #CCBAD4;
-    text-align: left;
-    font-family: 'Coda';
-    font-size: 13px;
-}
-
-.numCuenta{
-    border-radius: 25px;
-    background-color: #CCBAD4;
-    text-align: left;
-    font-family: 'Coda';
-    font-size: 13px;
-}
-
-.sumNum{
-    justify-self:left;
-    border-radius: 25px;
-    background-color: #CCBAD4;
-    text-align: left;
-    font-family: 'Coda';
-    font-size: 13px;
+    font-size: 14px;
 }
 
 textarea[name="user-input"] {
     display: block;
-    padding: 20px;
+    padding: 23px;
     width: 900px;
     margin: 20px auto;
     border: ridge;
-    border-color: #CCBAD4;
+    border-color: #C978B2;
     border-radius: 25px;
     font-family: 'Coda';
     font-size: 14px;
+}
+
+textarea[name="user-input"]:focus{
+color: #C42460;
 }
 
 #reset-button {
     display: block;
     padding: 5px;
     width: 200px;
-    margin: 25px auto;
+    margin: 20px auto;
     height: 40px;
     border: none;
     border-radius: 25px;
-    background-color: #F2CF66;
+    background-color: #F5CD49;
     font-family: 'Coda';
     font-size: 20px;
     color: #1c0d02;
@@ -150,7 +88,7 @@ textarea[name="user-input"] {
 }
 
 #reset-button:hover {
-    background-color: #f8bc07;
+    background-color: #F9974E;
     color:whitesmoke;
 }
 
@@ -159,7 +97,7 @@ footer {
     margin-bottom: 0;
     padding: 10px 0;
     width: 100%;    
-    background-color: #007070;
+    background-color: #3A8185;
     color: beige;
     text-align: center;
     font-family: 'Coda';
