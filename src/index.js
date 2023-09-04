@@ -2,11 +2,15 @@ import analyzer from './analyzer.js';
 //TODO: escuchar eventos del DOM e invocar  los métodos del objeto `analyzer`
 
 
-// Campo de entrada de texto
+// Campo de entrada de texto 
+//En esta constante llamada inputTexto; se le aplica el método querySelector; que recupera el elemento de DOM del textarea
+//Luego, se le garega el evento Keyup, lo que significa que al momento de que se presione alguna tecla, va a ocurrir la funcion de contadorpalabaras
 const inputTexto = document.querySelector('[name="user-input"]');
 inputTexto.addEventListener("keyup", contadorPalabras);
 
 //CONTADOR DE PALABRAS
+//Esta funcion llamada contadorPalabras contiene una constante llamada wordcount, en esta constatnte, se le aplica el metodo queryselector, que recupera/selecciona el atributo datatestid,wordcount
+//Luego a la constante wordcount, se le agrega la propiedad textconten, que significa que en en donde se ha recuperado el atributo, se debe imprimir el contenido especificado
 function contadorPalabras() {
   const wordcount = document.querySelector('[data-testid="word-count"]');
   wordcount.textContent="Palabras: " + analyzer.getWordCount(inputTexto.value)
@@ -48,7 +52,12 @@ function promedio() {
 }
 
 //Boton  limpiar metricas
-
+/*
+Este código asigna un evento de clic al botón con el id "reset-button". 
+Cuando se hace clic en el botón, la función limpiar se ejecuta. 
+La función limpiar establece el valor del elemento inputTexto en una cadena vacía y actualiza los valores de varios elementos del DOM con los valores correspondientes a cero. 
+Estos elementos son seleccionados utilizando selectores de atributos y sus valores se actualizan utilizando la propiedad textContent.
+*/
 const boton=document.getElementById("reset-button");
 boton.addEventListener("click", limpiar)
 
