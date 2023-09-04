@@ -1,21 +1,50 @@
-const analyzer = {  
+const analyzer = {
   getWordCount: (text) => {
-    //TODO: esta función debe retornar el recuento de palabras que se encuentran en el parámetro `text` de tipo `string`.
+    const words = text.split(/\s+/);
+    const wordCount = words.length;
+    return wordCount;
   },
+
   getCharacterCount: (text) => {
-    //TODO: esta función debe retornar el recuento de caracteres que se encuentran en el parámetro `text` de tipo `string`.
+    return text.length;
   },
   getCharacterCountExcludingSpaces: (text) => {
-    //TODO: esta función debe retornar el recuento de caracteres excluyendo espacios y signos de puntuación que se encuentran en el parámetro `text` de tipo `string`.
+    const textWithoutSpaces = text.replace(/\s/g, "");
+    const characterCount = textWithoutSpaces.length;
+    return characterCount;
   },
-  getAverageWordLength: (text) => {    
-    //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.
-  },
+  //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
   getNumberCount: (text) => {
-    //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
+    const number = text.match(/-?\d+(\. d+ )?/g);
+    const constnumbers = number ? number.length : 0;
+    return constnumbers;
   },
+
+  //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
   getNumberSum: (text) => {
-    //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
+    const numeros = /-?\d+(\. d+ )?/g;
+    const sumanumeros = text.match(numeros);
+    if (sumanumeros) {
+      let suma = 0;
+      for(let i=0; i<sumanumeros.length; i++) {
+        suma += parseFloat(sumanumeros[i])
+      }
+      // for (const numero of sumanumeros) {
+      //   suma += parseFloat(numero);
+      // }
+      return suma;
+    } else {
+      return 0;
+    }
+  },
+
+  //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.
+  getAverageWordLength: (text) => {
+    const words = text.split(" ");
+    const totalLength = words.reduce((acc, word) => acc + word.length, 0);
+    const averageLength = words.length > 0 ? totalLength / words.length : 0;
+
+    return averageLength;
   },
 };
 
