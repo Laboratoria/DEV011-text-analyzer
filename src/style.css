@@ -18,16 +18,15 @@ textarea {
     width: 500px;
 
 } 
-h1 {
+header {
    color: black;
 
     }
 
-ul {
+.mi-lu {
     list-style: none;
 }
-
-li {
+.mi-li {
     width: 200px;
     height: 30px;
     background-color:#d8af97 ;
@@ -40,7 +39,7 @@ li {
     justify-content: center;
 }
 
-button {
+#reset-button {
     width: 200px;
     height: 60px;
     background-color:#9b2b0c ;
@@ -50,11 +49,11 @@ button {
     cursor: pointer;
 }
 
-button:hover{
+#reset-button:hover{
     background-color: #c72c01;
 }
 
-p{
+footer{
     text-align: right;
 }
 
