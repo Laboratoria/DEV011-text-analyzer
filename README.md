@@ -45,6 +45,9 @@ el botón "Borrar Texto".
 
 ## 5. Decisiones de diseño
 
+Se creó un prototipo de baja fidelidad en figma en el cual se basó el la codificación
+de la aplicación.
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FdNofLLSjRdhxkdnyETkuWD%2FDev011-Proy1.Text-Analyzer%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DRimBfi84KNHH7IT6-1" allowfullscreen></iframe>
 En el diseño se buscó que tanto los colores como los elementos de la aplicación fueran visualmente amigables para las usuarias, es por esto que se eligieron colores que no fueran muy brillantes y predominan las esquinas redondeadas. 
 Al botón se le añadió una sombra inferior para que le diera un efecto de relieve que 
-indique que es posible dar clic en él. Se añadió un hover al botón para que la usuaria detecte con facilidad cuando el puntero se encuentre sobre el mismo.
+indique que es posible dar clic en él, también se le agregó un hover al botón para que la usuaria detecte con facilidad cuando el puntero se encuentre sobre el mismo.
