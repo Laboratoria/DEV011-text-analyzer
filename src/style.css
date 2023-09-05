@@ -49,7 +49,7 @@ textarea[name="user-input"] {
     padding: 23px;
     width: 900px;
     margin: 20px auto;
-    border: ridge;
+    border: ridge; /*efecto 3D al borde*/
     border-color: #C978B2;
     border-radius: 25px;
     font-family: 'Coda';
