@@ -15,8 +15,19 @@ const analyzer = {
     //TODO: esta función debe retornar el recuento de caracteres excluyendo espacios y signos de puntuación que se encuentran en el parámetro `text` de tipo `string`.
   },
   getAverageWordLength: (text) => {
+    const arrayPalabras = text.trim().split (" ");
+    const palabrasLength = arrayPalabras.map ( function(palabra) {
+      return palabra.length;
+    })
+
+    let sumPalabras = 0
+    palabrasLength.map( function(palabraLength) {
+      sumPalabras = sumPalabras + palabraLength
+    })
+    const resultado = sumPalabras/arrayPalabras.length
+    return resultado.toFixed(2)
     //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.
-    return text;
+    // return LongitudMedia.length;
   },
   getNumberCount: (text) => {
     let onlynumbers = text.match(/\d+/g); // secuencias de uno o más dígitos en una cadena de texto//
