@@ -9,7 +9,7 @@ const botonReset = document.getElementById("reset-button");
 //Empezamos a monitorear eventos en el DOM
 //Monitoreamos el ingreso de characteres en tiempo real del textarea.
 textbox.addEventListener("keyup",actualizarMetricas);
-botonReset.addEventListener("click", limpiarTexto)
+botonReset.addEventListener("click", limpiarTexto);
 
 //Funcion que actualiza las metricas tras la deteccion de un evento en tiempo real.
 function actualizarMetricas(){

@@ -5,8 +5,7 @@ const analyzer = {
     if(text === ""){
       return numPalabras - 1;
     }
-    else return numPalabras
-    
+    else return numPalabras;
   },
   getCharacterCount: (text) => {
     return text.length;
