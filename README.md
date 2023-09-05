@@ -47,6 +47,8 @@ el botón "Borrar Texto".
 
 Se creó un prototipo de baja fidelidad en figma en el cual se basó el la codificación
 de la aplicación.
+![Prototipo de baja fidelidad](https://github.com/greysmpich/DEV011-text-analyzer-proy1/blob/main/Prototipo%20de%20baja%20fidelidad.png "Prototipo de baja fidelidad")
+
 En el diseño se buscó que tanto los colores como los elementos de la aplicación fueran visualmente amigables para las usuarias, es por esto que se eligieron colores que no fueran muy brillantes y predominan las esquinas redondeadas. 
 Al botón se le añadió una sombra inferior para que le diera un efecto de relieve que 
 indique que es posible dar clic en él, también se le agregó un hover al botón para que la usuaria detecte con facilidad cuando el puntero se encuentre sobre el mismo.
