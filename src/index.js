@@ -21,7 +21,13 @@ document.querySelector("textarea").addEventListener("keyup", function (e) {
 const btn = document.getElementById("reset-button");
 
 btn.addEventListener("click", function () {
-  (document.querySelector("textarea").value = ""), (document.querySelector(".caractCuenta").innerHTML = "Caracteres: 0"), (document.querySelector(".caractSinEsp").innerHTML = "Caracteres sin espacio: 0"), (document.querySelector(".palabrasCuenta").innerHTML = "Palabras: 0"), (document.querySelector(".extPalabrasProm").innerHTML = "Promedio de longitud: 0"), (document.querySelector(".numCuenta").innerHTML = "Números: 0"), ( document.querySelector(".sumNum").innerHTML = "Suma números: 0");
+  (document.querySelector("textarea").value = ""),
+  (document.querySelector("li[data-testid=character-count]").innerHTML = "Caracteres: 0"),
+  (document.querySelector("li[data-testid=character-no-spaces-count]").innerHTML = "Caracteres sin espacio: 0"),
+  (document.querySelector("li[data-testid=word-count]").innerHTML = "Palabras: 0"),
+  (document.querySelector("li[data-testid=word-length-average]").innerHTML = "Promedio de longitud: 0"),
+  (document.querySelector("li[data-testid=number-count]").innerHTML = "Números: 0"),
+  (document.querySelector("li[data-testid=number-sum]").innerHTML = "Suma números: 0");
 });
 
 //TODO: escuchar eventos del DOM e invocar  los métodos del objeto `analyzer`
