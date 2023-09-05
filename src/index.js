@@ -37,3 +37,9 @@ textArea.addEventListener("keyup", function () {
   const textValue = textArea.value;
   NumberSum.textContent = analyzer.getNumberSum(textValue);
 });
+
+const AverageWordLenght = document.getElementsByClassName("word-length-average")[0];
+textArea. addEventListener("keyup", function (){
+  const textValue = textArea.value; 
+  AverageWordLenght.textContent = analyzer.getAverageWordLength(textValue)
+})
