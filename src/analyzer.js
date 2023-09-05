@@ -5,16 +5,11 @@ const analyzer = {
   Luego se define una variable llamada palabras, en la que se utiliza la función replace() para eliminar los caracteres de puntuación y números del texto, utilizando otro regex. 
   Después, se utiliza trim() para eliminar los espacios en blanco al principio y al final del texto.
   Finalmente, se utiliza split() con el regex puesto en la variable vari, para dividir el texto en palabras.
-  Luego utilizamos una condicional if, que nos dice que si el primer dígito de la variable palabras está vacío, se retorne 0.
-  y la variable con cumple con esta condición, se retorna la longitud del array de palabras.
+  Luego utilizamos una condicional if, que nos dice que si la longitudo de la variable palabras es mayor a 0, se retorna la longitud del array, lo cual seria el numero de palabras.
   */
     const vari = /[\s\n]+/g
-    const palabras = text.replace(/[.,;?¿!¡{}:'"/-1234567890]/gi,"").trim().split(vari);
-    if (palabras[0]==="") {
-      
-      return 0
-    }
-    else { 
+    const palabras = text.replace(/[.,;?¿!¡{}:'"/-1234567890]/gi,"").trim().split(vari); 
+    if (palabras.length>0){
       return palabras.length
     }
   },
@@ -41,14 +36,12 @@ const analyzer = {
     De lo contrario, retorna la longitud del array de caracteres resultante, lo cual sería el recuento de caracteres excluyendo espacios y caracteres especiales.
     */ 
     const caraSig = text.replace(/[.,; ?¿!¡{}:'"-]/gi,"").split("");
-  
     if (caraSig[0]==="") {
       return 0
     }
     else { 
       return caraSig.length
     }
-   
   },
   getAverageWordLength: (text) => {    
     //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.
@@ -69,7 +62,7 @@ const analyzer = {
       
     }
     const prom = sum/arrPalabras.length
-    //return prom
+  
     return parseFloat(prom.toFixed(2))
  
   },
@@ -77,37 +70,44 @@ const analyzer = {
     //Esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
     /*
     Este código cuenta cuántos números hay en el texto. 
-    Primero, se define la variable num, en donde se utiliza el método replace para eliminar todos los caracteres que no sean números del texto. 
-    Luego, se utiliza el método split para convertir el resultado en un array de caracteres individuales. 
-    Se utiliza la condicion if, en la que si la longitud del array es mayor a cero, se retorna esa longitud como resultado, es decir se retorna la cantidad de numero que se encuentren en el texto.
+    Primero, se utiliza el método match junto con una expresión regular para encontrar todos los números en el texto. 
+    Luego, se verifica si la longitud del array resultante es mayor a cero. Si es así, se retorna esa longitud como resultado, es decir, la cantidad de números encontrados en el texto, es decir, la cantidad de numero que se encontraron. 
     De lo contrario, se retorna cero.
-    */
-    const num = text.replace(/[^0-9]+/g,"").split("")
+    */ 
+    const num = text.match(/\b\d+(\.\d+)\b|\b\d+\b/g);
     if(num.length >0) {
       return num.length
     }
     else {
       return 0
-    }
+    } 
   },
   
   getNumberSum: (text) => {
     //Esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
     /*
-    Este código calcula la suma de todos los números que se encuentran en el parámetro text. 
+    Este código calcula la suma de todos los números que se encuentran en el parámetro text.
     Primero, se inicializa la variable suma en cero. 
-    Luego, se define la variable Number en la que se utiliza el método replace para eliminar todos los caracteres que no sean números del texto.
-    Luego se convierte el resultado en un array de caracteres individuales utilizando el método split. 
-    Después, se recorre cada elemento del array y se va sumando su valor a la variable suma. 
-    Finalmente, se retorna el valor de suma, que es la suma total de los números encontrados en el texto.
+    Luego, se define la variable Number y se utiliza el método match junto con una expresión regular para encontrar todos los números en el texto. 
+    Después, se recorre cada elemento del array Number y se va sumando su valor a la variable suma. 
+    Finalmente, se retorna el valor de suma, que es la suma total de los números encontrados en el texto. 
+    Si no se encuentra ningún número, se retorna cero.
     */
+   
     let suma = 0
-    const Number = text.replace(/[^0-9]+/g,"").split("")
+    const Number = text.match(/\b\d+(\.\d+)\b|\b\d+\b/g)
    
     for(let i=0; i<Number.length; i++) {
+      
+      if (Number.length===0){
+      return 0
+      }
+      else {
       suma = suma + parseFloat(Number[i])
+      return suma
+      }
     }
-    return suma
+    
   },
 
 };
