@@ -3,38 +3,20 @@ import analyzer from "./analyzer.js";
 document.querySelector("textarea").addEventListener("keyup", function (e) {
   const text = e.target.value;
   const contActCaract = analyzer.getCharacterCount(text);
-  document.querySelector(".caractCuenta").innerHTML = `Caracteres: ${contActCaract}`;
-});
-
-document.querySelector("textarea").addEventListener("keyup", function (e) {
-  const text = e.target.value;
   const contActCaractSinEspNiSignos = analyzer.getCharacterCountExcludingSpaces(text);
-  document.querySelector(".caractSinEsp").innerHTML = `Caracteres sin espacio: ${contActCaractSinEspNiSignos}`;
-});
-
-document.querySelector("textarea").addEventListener("keyup", function (e) {
-  const text = e.target.value;
   const contActPalabras = analyzer.getWordCount(text);
-  document.querySelector(".palabrasCuenta").innerHTML = `Palabras: ${contActPalabras}`;
-});
-
-document.querySelector("textarea").addEventListener("keyup", function (e) {
-  const text = e.target.value;
   const promedioPalabrasAct = analyzer.getAverageWordLength(text);
-  document.querySelector(".extPalabrasProm").innerHTML = `Promedio de longitud: ${promedioPalabrasAct}`;
-});
-
-document.querySelector("textarea").addEventListener("keyup", function (e) {
-  const text = e.target.value;
   const contActNumeros = analyzer.getNumberCount(text);
-  document.querySelector(".numCuenta").innerHTML = `Números: ${contActNumeros}`;
+  const sumaNumerosAct = analyzer.getNumberSum(text);
+
+  document.querySelector("li[data-testid=character-count]").innerHTML = `Caracteres: ${contActCaract}`;
+  document.querySelector("li[data-testid=character-no-spaces-count]").innerHTML = `Caracteres sin espacio: ${contActCaractSinEspNiSignos}`;
+  document.querySelector("li[data-testid=word-count]").innerHTML = `Palabras: ${contActPalabras}`;
+  document.querySelector("li[data-testid=word-length-average]").innerHTML = `Promedio de longitud: ${promedioPalabrasAct}`;
+  document.querySelector("li[data-testid=number-count]").innerHTML = `Números: ${contActNumeros}`;
+  document.querySelector("li[data-testid=number-sum]").innerHTML = `Suma números: ${sumaNumerosAct}`;
 });
 
-document.querySelector("textarea").addEventListener("keyup", function (e) {
-  const text = e.target.value;
-  const sumaNumerosAct = analyzer.getNumberSum(text);
-  document.querySelector(".sumNum").innerHTML = `Suma números: ${sumaNumerosAct}`;
-});
 
 const btn = document.getElementById("reset-button");
 

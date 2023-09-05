@@ -22,38 +22,26 @@ ul {
     grid-template-rows: repeat(2, auto);
 }
 
-.caractCuenta, .caractSinEsp, .palabrasCuenta, .extPalabrasProm, .numCuenta, .sumNum {
+.metricas {
     margin: 10px;
     padding: 10px;
     width: 60%;
     border: 0px;
     color:honeydew;
-}
-
-.caractCuenta, .extPalabrasProm {
-    justify-self: right;
     border-radius: 25px;
     background-color: #C978B2;
     text-align: left;
     font-family: 'Coda';
     font-size: 14px;
+}
+
+li[data-testid="character-count"], li[data-testid="word-length-average"] {
+    justify-self: right;
+    
 }   
 
-.caractSinEsp, .numCuenta {
-    border-radius: 25px;
-    background-color: #C978B2;
-    text-align: left;
-    font-family: 'Coda';
-    font-size: 14px;
-}
-
-.palabrasCuenta, .sumNum {
+li[data-testid="word-count"], li[data-testid="number-sum"] {
     justify-self:left;
-    border-radius: 25px;
-    background-color: #C978B2;
-    text-align: left;
-    font-family: 'Coda';
-    font-size: 14px;
 }
 
 textarea[name="user-input"] {
