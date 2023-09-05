@@ -1,55 +1,45 @@
 import analyzer from "./analyzer.js";
 
-const mensaje = document.querySelector("textarea");
-const contadorCaract = document.querySelector(".caractCuenta");
-const contadorCaractSinEsp = document.querySelector(".caractSinEsp");
-const contadorPalabras = document.querySelector(".palabrasCuenta");
-const promedioPalabras = document.querySelector(".extPalabrasProm");
-const contadorNumeros = document.querySelector(".numCuenta");
-const sumaNumeros = document.querySelector(".sumNum");
-
-mensaje.addEventListener("keyup", function (e) {
+document.querySelector("textarea").addEventListener("keyup", function (e) {
   const text = e.target.value;
   const contActCaract = analyzer.getCharacterCount(text);
-  contadorCaract.innerHTML = `Caracteres: ${contActCaract}`;
+  document.querySelector(".caractCuenta").innerHTML = `Caracteres: ${contActCaract}`;
 });
 
-mensaje.addEventListener("keyup", function (e) {
+document.querySelector("textarea").addEventListener("keyup", function (e) {
   const text = e.target.value;
   const contActCaractSinEspNiSignos = analyzer.getCharacterCountExcludingSpaces(text);
-  contadorCaractSinEsp.innerHTML = `Caracteres sin espacio: ${contActCaractSinEspNiSignos}`;
+  document.querySelector(".caractSinEsp").innerHTML = `Caracteres sin espacio: ${contActCaractSinEspNiSignos}`;
 });
 
-mensaje.addEventListener("keyup", function (e) {
+document.querySelector("textarea").addEventListener("keyup", function (e) {
   const text = e.target.value;
   const contActPalabras = analyzer.getWordCount(text);
-  contadorPalabras.innerHTML = `Palabras: ${contActPalabras}`;
+  document.querySelector(".palabrasCuenta").innerHTML = `Palabras: ${contActPalabras}`;
 });
 
-mensaje.addEventListener("keyup", function (e) {
+document.querySelector("textarea").addEventListener("keyup", function (e) {
   const text = e.target.value;
   const promedioPalabrasAct = analyzer.getAverageWordLength(text);
-  promedioPalabras.innerHTML = `Promedio de longitud: ${promedioPalabrasAct}`;
+  document.querySelector(".extPalabrasProm").innerHTML = `Promedio de longitud: ${promedioPalabrasAct}`;
 });
 
-mensaje.addEventListener("keyup", function (e) {
+document.querySelector("textarea").addEventListener("keyup", function (e) {
   const text = e.target.value;
   const contActNumeros = analyzer.getNumberCount(text);
-  contadorNumeros.innerHTML = `Números: ${contActNumeros}`;
+  document.querySelector(".numCuenta").innerHTML = `Números: ${contActNumeros}`;
 });
-//mensaje.addEventListener("focus", function(e) {
-//e.target.style.background = "#FF9966";
-//});
-mensaje.addEventListener("keyup", function (e) {
+
+document.querySelector("textarea").addEventListener("keyup", function (e) {
   const text = e.target.value;
   const sumaNumerosAct = analyzer.getNumberSum(text);
-  sumaNumeros.innerHTML = `Suma números: ${sumaNumerosAct}`;
+  document.querySelector(".sumNum").innerHTML = `Suma números: ${sumaNumerosAct}`;
 });
 
 const btn = document.getElementById("reset-button");
 
 btn.addEventListener("click", function () {
-  (mensaje.value = ""), (contadorCaract.innerHTML = "Caracteres: 0"), (contadorCaractSinEsp.innerHTML = "Caracteres sin espacio: 0"), (contadorPalabras.innerHTML = "Palabras: 0"), (promedioPalabras.innerHTML = "Promedio de longitud: 0"), (contadorNumeros.innerHTML = "Números: 0"), (sumaNumeros.innerHTML = "Suma números: 0");
+  (document.querySelector("textarea").value = ""), (document.querySelector(".caractCuenta").innerHTML = "Caracteres: 0"), (document.querySelector(".caractSinEsp").innerHTML = "Caracteres sin espacio: 0"), (document.querySelector(".palabrasCuenta").innerHTML = "Palabras: 0"), (document.querySelector(".extPalabrasProm").innerHTML = "Promedio de longitud: 0"), (document.querySelector(".numCuenta").innerHTML = "Números: 0"), ( document.querySelector(".sumNum").innerHTML = "Suma números: 0");
 });
 
 //TODO: escuchar eventos del DOM e invocar  los métodos del objeto `analyzer`
