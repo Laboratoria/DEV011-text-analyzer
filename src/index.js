@@ -5,11 +5,6 @@ import analyzer from "./analyzer.js";
 const textarea = document.querySelector('textarea[name="user-input"]');
 const button = document.getElementById("reset");
 
-button.addEventListener("click", function () {
-  textarea.value = "";
-});
-// fin boton para limpiar la metrica :)
-
 //constantes conectadas con HTML (cajitas)
 const númerodepalabras = document.querySelector(
   '[data-testid="número de palabras"]'
@@ -28,6 +23,17 @@ const Promediolongitud = document.querySelector(
   '[data-testid="longitud media de palabras"]'
 );
 const userinput = document.querySelector('textarea[name="user-input"]');
+
+//boton para limpiar la metrica
+button.addEventListener("click", function () {
+  textarea.value = "";
+  númerodepalabras.textContent = "Número de palabras: ";
+  Caracteres.textContent = "Caracteres: ";
+  Caracteressinespacios.textContent = "Recuento de caracteres sin espacios: ";
+  Números.textContent = "Números: ";
+  Sumanúmeros.textContent = "Suma Números: ";
+  Promediolongitud.textContent = "Longitud de palabras: ";
+});
 
 //número de Palabras// función con HTML
 
@@ -53,7 +59,7 @@ userinput.addEventListener("keyup", () => {
 userinput.addEventListener("keyup", () => {
   const text = userinput.value;
   const iCountC = analyzer.getAverageWordLength(text);
-  Promediolongitud.textContent = "longitud media de palabras: " + iCountC;
+  Promediolongitud.textContent = "Longitud de palabras: " + iCountC;
 });
 //números
 userinput.addEventListener("keyup", () => {

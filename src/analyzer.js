@@ -9,33 +9,37 @@ const analyzer = {
     return text.length;
   },
   getCharacterCountExcludingSpaces: (text) => {
-    const textWithoutSpaces = text.replace(/\s/g, "");
+    const textWithoutSpaces = text.replace(/\W/g, "");
     const characterCount = textWithoutSpaces.length;
     return characterCount;
   },
   //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
   getNumberCount: (text) => {
-    const number = text.match(/-?\d+(\. d+ )?/g);
-    const constnumbers = number ? number.length : 0;
-    return constnumbers;
-  },
+    const numbers = text.trim().split(" ");
+    let numberCount = 0;
 
+    for (const number of numbers) {
+      if (number.match(/^[0-9]+(\.[0-9]+)?$/) !== null) {
+        numberCount++;
+      }
+    }
+
+    return numberCount;
+  },
   //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
   getNumberSum: (text) => {
-    const numeros = /-?\d+(\. d+ )?/g;
-    const sumanumeros = text.match(numeros);
-    if (sumanumeros) {
-      let suma = 0;
-      for(let i=0; i<sumanumeros.length; i++) {
-        suma += parseFloat(sumanumeros[i])
-      }
-      // for (const numero of sumanumeros) {
-      //   suma += parseFloat(numero);
-      // }
-      return suma;
-    } else {
-      return 0;
+    const numbers = text.trim().split(" ");
+    const numbersArray = numbers.filter((number) => {
+      return number.match(/^[0-9]+(\.[0-9]+)?$/) !== null;
+    });
+
+    let total = 0;
+
+    for (const number of numbersArray) {
+      total += parseFloat(number);
     }
+
+    return total;
   },
 
   //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.
@@ -44,7 +48,7 @@ const analyzer = {
     const totalLength = words.reduce((acc, word) => acc + word.length, 0);
     const averageLength = words.length > 0 ? totalLength / words.length : 0;
 
-    return averageLength;
+    return parseFloat(averageLength.toFixed(2));
   },
 };
 
