@@ -11,6 +11,7 @@ const analyzer = {
   getCharacterCountExcludingSpaces: (text) => {
     const textWithoutSpaces = text.replace(/\W/g, "");
     const characterCount = textWithoutSpaces.length;
+    console.log ("esto es un commit")
     return characterCount;
   },
   //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
