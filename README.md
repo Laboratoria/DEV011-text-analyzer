@@ -1,1 +1,1 @@
-Text Analyzer es una aplicación centrado en la codificación de strings a números. Brinda a la usuaria la opción de escribir un texto en un cuadro en donde automaticamente se le informará el número de palabras, conteo de caracteres, conteo de números, suma de números y la longitud promedio de palabras que utilice.
+debes modificarlo para explicar la información necesaria para el uso de tu aplicación web, así como una introducción a la aplicación, su funcionalidad y decisiones de diseño que tomaron.
