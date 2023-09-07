@@ -1,0 +1,33 @@
+header {
+  text-align: center;
+}
+footer {
+  text-align: center;
+}
+#reset {
+  background-color: aquamarine;
+  display: block;
+  margin: 0 auto;
+  margin-top: px;
+}
+
+.cuadro {
+  background-color: rgb(6, 122, 122);
+  display: inline-block;
+  color: azure;
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+  padding: 25px;
+  border: 5px solid black;
+}
+
+textarea[name="user-input"] {
+  display: block;
+  margin: 0 auto;
+  margin-top: 90px;
+  background-color: rgb(224, 240, 240);
+  width: 800px;
+  height: 200px;
+  color: rgb(2, 2, 1);
+}
