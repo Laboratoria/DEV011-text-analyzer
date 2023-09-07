@@ -22,10 +22,13 @@ function actualizarMetricas(){
   const CharCount = analyzer.getCharacterCount(textbox.value);
   contadoresMetrica[1].textContent = "Caracteres: " + CharCount;
   
-  //obtenemos la metrica de caracteres con uso del objeto analyzer
+  //obtenemos la metrica de caracteres sin espacios o signos con uso del objeto analyzer
   const CharCountExSpace = analyzer.getCharacterCountExcludingSpaces(textbox.value);
   contadoresMetrica[2].textContent = "Caracteres Sin Espacios: " + CharCountExSpace;
   
+  //obtenemos la metrica de numerose con uso del objeto del objeto analyzer
+  const NumCount = analyzer.getNumberCount(textbox.value);
+  contadoresMetrica[3].textContent = "Numeros: " + NumCount;
   
 }
 
