@@ -12,18 +12,18 @@ const analyzer = {
   },
   getCharacterCountExcludingSpaces: (text) => {
     //TODO: esta función debe retornar el recuento de caracteres excluyendo espacios y signos de puntuación que se encuentran en el parámetro `text` de tipo `string`.
-    //numero de espacios
-    const numEspacios = text.split(" ").length - 1;
-    if(numEspacios > 0){
-      return text.length - numEspacios;
-    }
-    else return text.length;
+    //removiendo los espacios y signos
+    const textoSinEspaciosYSignos = text.replace(/[^\w\s]|_/g,'').replace(/\s+/g,'');
+    //contabilizando los caracterest restantes
+    const numCaracteres = textoSinEspaciosYSignos.length;
+    return numCaracteres;
   },
   getAverageWordLength: (text) => {    
     //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.
   },
   getNumberCount: (text) => {
     //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
+    
   },
   getNumberSum: (text) => {
     //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
