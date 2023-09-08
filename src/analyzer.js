@@ -20,6 +20,25 @@ const analyzer = {
   },
   getAverageWordLength: (text) => {    
     //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.
+    
+    /*removemos los simbolos y signos del texto (si es que los hay)
+    y usamos .split para obtener un array con strings separados por un
+    espacio (palabras)*/
+    const Palabras = text.trim().replace(/(?![.,])[^a-zA-Z0-9\s]|_/g,'').split(" ");
+    let sumaLongitudPalabras = 0;
+    
+    if(Palabras){
+      for(let i = 0; i < Palabras.length; i++){
+      //hacemos una suma iterativa con el valor .length de cada elemento y lo almacenamos en la variable 'sumaLongitudPalabras'
+        sumaLongitudPalabras += Palabras[i].length;
+      }
+      //creamos variable para hallar y almacenar la longitud promedio
+      const longitudPromedio = sumaLongitudPalabras/Palabras.length;
+      return parseFloat(longitudPromedio.toFixed(2));
+    }
+    else return 0;
+    //bucle 'for' para recorrer los elementos del array 'Palabras'
+    
   },
   getNumberCount: (text) => {
     //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
@@ -37,13 +56,13 @@ const analyzer = {
     //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
     const regex = /\b\d+(\.\d+)?(?![A-Za-z])\b/g ;
     const Numeros = text.match(regex);
-    let sum = 0;
+    let suma = 0;
 
     if (Numeros){
       for(let i = 0; i < Numeros.length; i++){
-        sum += parseFloat(Numeros[i]);
+        suma += parseFloat(Numeros[i]);
       }
-      return sum;
+      return suma;
     }
     else return 0;
   },

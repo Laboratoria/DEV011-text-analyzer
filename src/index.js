@@ -26,13 +26,17 @@ function actualizarMetricas(){
   const CharCountExSpace = analyzer.getCharacterCountExcludingSpaces(textbox.value);
   contadoresMetrica[2].textContent = "Caracteres Sin Espacios: " + CharCountExSpace;
   
-  //obtenemos la metrica de numeros con uso del objeto del objeto analyzer
+  //obtenemos la metrica de numeros con uso del objeto analyzer
   const NumCount = analyzer.getNumberCount(textbox.value);
   contadoresMetrica[3].textContent = "Numeros: " + NumCount;
   
   //obtenemos la metrica de la suma de numeros con uso del objeto del objeto analyzer
   const NumSum = analyzer.getNumberSum(textbox.value);
   contadoresMetrica[4].textContent = "Suma de Numeros: " + NumSum;
+
+  //obtenemos la metrica de la longitud promedio de las palabras con uso del objeto analyzer
+  const AvrgWordLength = analyzer.getAverageWordLength(textbox.value);
+  contadoresMetrica[5].textContent = "Longitud Promedio de Palabras: " + AvrgWordLength;
 }
 
 function limpiarTexto(){
