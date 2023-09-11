@@ -18,19 +18,22 @@ textArea.addEventListener("keyup", function () {
   characterCount.textContent = analyzer.getCharacterCount(textValue);
 });
 
-const CharacterCountExcludingSpaces = document.querySelector("li[data-testid='character-no-spaces-count']");
+const CharacterCountExcludingSpaces = document.querySelector(
+  "li[data-testid='character-no-spaces-count']"
+);
 textArea.addEventListener("keyup", function () {
   const textValue = textArea.value;
-  CharacterCountExcludingSpaces.innerHTML = 'Recuento de caracteres excluyendo espacios y signos de puntuación  <p class="character-no-spaces-count">'+ analyzer.getCharacterCountExcludingSpaces(textValue) + '</p>'
-    
+  CharacterCountExcludingSpaces.innerHTML =
+    'Recuento de caracteres excluyendo espacios y signos de puntuación  <p class="character-no-spaces-count">' +
+    analyzer.getCharacterCountExcludingSpaces(textValue) +
+    "</p>";
 });
 
 const NumberCount = document.getElementsByClassName("number-count")[0];
 textArea.addEventListener("keyup", function () {
   const textValue = textArea.value;
   NumberCount.textContent = analyzer.getNumberCount(textValue);
-});          
-
+});
 
 const NumberSum = document.getElementsByClassName("number-sum")[0];
 textArea.addEventListener("keyup", function () {
@@ -38,8 +41,10 @@ textArea.addEventListener("keyup", function () {
   NumberSum.textContent = analyzer.getNumberSum(textValue);
 });
 
-const AverageWordLenght = document.getElementsByClassName("word-length-average")[0];
-textArea. addEventListener("keyup", function (){
-  const textValue = textArea.value; 
-  AverageWordLenght.textContent = analyzer.getAverageWordLength(textValue)
-})
+const AverageWordLenght = document.getElementsByClassName(
+  "word-length-average"
+)[0];
+textArea.addEventListener("keyup", function () {
+  const textValue = textArea.value;
+  AverageWordLenght.textContent = analyzer.getAverageWordLength(textValue);
+});
