@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background-color: #a68069;
+    font-family: sans-serif;
+
+}
+
+textarea[name="user-input"] {
+    background-color: #d8af97;
+    border-radius: 5px;
+    height: 200px;
+    padding: 1rem;
+    font-size: large; 
+    width: 500px;
+} 
+header {
+   color: black;
+
+    }
+
+.mi-ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+    align-self: center;
+    margin-left: 300px;
+
+}
+li  {
+    margin: 3px;
+}
+.mi-li1 {
+    width: 200px;
+    height: 30px;
+    background-color:#d8af97 ;
+    border-radius: 5px;
+    color:black ;
+    font-size: small;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    
+
+}
+.mi-li2 {
+    width: 200px;
+    height: 30px;
+    background-color:#ecd6c0 ;
+    border-radius: 5px;
+    color:black ;
+    font-size: small;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.mi-li3 {
+    width: 200px;
+    height: 30px;
+    background-color:#ffb48a ;
+    border-radius: 5px;
+    color:black ;
+    font-size: small;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+
+
+#reset-button {
+    width: 200px;
+    height: 60px;
+    background-color:#d38659;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#reset-button:hover{
+    background-color: #c72c01;
+}
+
+footer{
+    text-align: right;
+}
+

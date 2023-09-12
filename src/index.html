@@ -8,6 +8,26 @@
 </head>
 
 <body>
+  <header>
+    <h1> Analizador de texto</h1>
+  </header>
+  <main>
+    <textarea name="user-input" cols="30" rows="5"></textarea>
+    <ul class="mi-ul">
+      <li data-testid="character-count" class="mi-li1">Caracteres: 0</li>
+      <li data-testid="character-no-spaces-count" class="mi-li1">Caracteres sin Espacios: 0</li>
+      <li data-testid="word-count" class="mi-li2">Palabras: 0</li>
+      <li data-testid="number-count" class="mi-li2">Números: 0</li>
+      <li data-testid="number-sum" class="mi-li3">Suma números: 0</li>
+      <li data-testid="word-length-average" class="mi-li3">Longitud promedio palabras: 0</li>
+    </ul>
+
+    <button id="reset-button"> Borrar </button>
+  </main>
+  <footer>
+    <p>Autora: Tiare Infante :)</p>
+  </footer>
   <script src="index.js" type="module"></script>
 </body>
+
 </html>
