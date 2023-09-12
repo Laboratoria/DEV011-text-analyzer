@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>Analizador de texto</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pangolin&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,27 +17,33 @@
   </header>
 
   <main>
+    
+    <p style="font-family:'Press Start 2P', cursive; color: lightsalmon;"> <strong>¡BIENVENID@ AL ANALIZADOR DE TEXTO!</strong> </p>
+
     <div>
-      <p> <strong>¡BIENVENID@ AL ANALIZADOR DE TEXTO!</strong> </p>
       <p>Ingresa un texto al siguiente cuadro para calcular sus métricas.</p>
     </div>
     
-    <textarea name="user-input"></textarea>
+    <div>
+      <textarea cols="50" rows="5" name="user-input"></textarea>
 
-    <ul>
-      <li class="metrica" data-testid="word-count">Palabras: </li>
-      <li class="metrica" data-testid="character-count">Caracteres: </li>
-      <li class="metrica" data-testid="character-no-spaces-count">Caracteres Sin Espacios: </li>
-      <li class="metrica" data-testid="number-count">Cantidad de Numeros: </li>
-      <li class="metrica" data-testid="number-sum">Suma de Numeros: </li>
-      <li class="metrica" data-testid="word-length-average">Longitud Promedio de Palabras: </li>
-    </ul>
+      <ul>
+        <li class="metrica" data-testid="word-count">Palabras: </li>
+        <li class="metrica" data-testid="character-count">Caracteres: </li>
+        <li class="metrica" data-testid="character-no-spaces-count">Caracteres Sin Espacios: </li>
+        <li class="metrica" data-testid="number-count">Cantidad de Numeros: </li>
+        <li class="metrica" data-testid="number-sum">Suma de Numeros: </li>
+        <li class="metrica" data-testid="word-length-average">Longitud Promedio de Palabras: </li>
+      </ul>
+    </div>
+    
 
-    <button id="reset-button"><strong>Limpiar el cuadro</strong></button>
+    <button id="reset-button">Limpiar</button>
   </main>
 
   <footer>
     <p>© Copyright Elizabeth Del Castillo Deza - 2023</p>
+    <img src="imagenes/cirnofooter.png">
   </footer>
 
 </body>

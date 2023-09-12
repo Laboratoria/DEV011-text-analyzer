@@ -28,7 +28,7 @@ function actualizarMetricas(){
   
   //obtenemos la metrica de numeros con uso del objeto analyzer
   const NumCount = analyzer.getNumberCount(textbox.value);
-  contadoresMetrica[3].textContent = "Numeros: " + NumCount;
+  contadoresMetrica[3].textContent = "Cantidad de Numeros: " + NumCount;
   
   //obtenemos la metrica de la suma de numeros con uso del objeto del objeto analyzer
   const NumSum = analyzer.getNumberSum(textbox.value);
