@@ -32,6 +32,9 @@ header {
     margin-left: 300px;
 
 }
+li  {
+    margin: 3px;
+}
 .mi-li1 {
     width: 200px;
     height: 30px;
