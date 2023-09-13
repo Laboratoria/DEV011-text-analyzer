@@ -11,11 +11,11 @@ main{
   text-align: center;
 }
 
-main div{
+main section{
   font-family: 'Pangolin', cursive;
 }
 
-main div p{
+main section p{
   margin: 25px 0 15px 0;
   font-size: 20px;
 }
