@@ -1,29 +1,10 @@
-label,
-textarea {
-  font-size: 1rem; /*tamaño de la fuente*/
-  letter-spacing: 1px;
-  margin: 0 auto;
-}
 
-textarea {
-  background-color: #fcebf0;
-  display: flex; /*display establece los tipos de visualización interna y externa de un elemento*/
-  justify-content: center;
-  align-items: center;
-  padding: 1em; /*relleno*/
-  border-radius: 10px;  /*me ayuda a redondear el borde*/
-  max-width: 70%; 
-  line-height: 8.5;
-  border: 2px solid transparent;
-  outline: none;
-  font-family: Verdana, sans-serif;
-  font-weight: 500;
-  font-size: 16;
-  box-shadow: 1px 1px 1px #da5151;
-  line-height: 1.4;
-  width: 500px;
-  height: 200px;
-  margin: 0 auto; /*me permitió centrar el textArea*/
+textarea[name="user-input"]
+{
+width: 100%;
+height: 150px;
+padding: 10px;
+margin-bottom: 10px;
 }
 
 body {
@@ -32,10 +13,6 @@ body {
   flex-direction: column;
 }
 
-.background {
-  background-image: url(/Brick-pattern-19.png);
-  background-size: 200px;
-}
 
 label {
   display: block;
@@ -59,10 +36,6 @@ header {
   position: relative;
 }
 
-textarea {
-  display: block;
-  margin-bottom: 8px;
-}
 
 .box {
   background: #ff609a; 
@@ -76,13 +49,26 @@ textarea {
   border-radius: 10px;
 }
 
-.boxes {
+ul {
   margin-bottom: 05%;
   display: flex;
   text-align: center;
 }
 
-.reset-button {
-  background-color: #da5151;
-  position: fixed;
+#reset-button {
+  border: 0;
+  background-image:linear-gradient( to right,
+  rgb(246, 124, 195),
+  rgb(253, 210, 210),
+  rgb(255, 101, 152) );
+  position: center;
+  font-size: 18px;
+  padding: 4px;
+  border-radius: 8px;
+  transition: .3s;
+  margin: 0 auto;
+}
+
+footer {
+  font-size: 1rem;
 }

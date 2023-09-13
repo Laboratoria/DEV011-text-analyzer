@@ -43,7 +43,6 @@ const analyzer = {
   getNumberSum: (text) => {
     //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
     const listaText = text.replace(/\s+/g, " ").trim().split(" ");
-    console.log('************* ', listaText);
     let sumNumber = 0;
     for (let i = 0; i < listaText.length; i++) {
       if (!isNaN(listaText[i])) {
