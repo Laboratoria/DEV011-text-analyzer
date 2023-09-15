@@ -1,13 +1,43 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Analizador de texto</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" type="module"></script>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>Analizador de texto</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
+  <header>
+    <h1>Analizador de texto</h1>
+  </header>
 
-<body>
-  <script src="index.js" type="module"></script>
-</body>
+  <body background="Brick-pattern-19.png">
+    <ul>
+      <li data-testid="word-count" class="box">
+        Recuento de palabras
+      </li>
+      <li data-testid="character-count" class="box">
+        Recuento de caracteres
+      </li>
+
+      <li data-testid="character-no-spaces-count" class="box">
+        Recuento de caracteres excluyendo espacios y signos de puntuación
+      </li>
+      <li data-testid="number-count" class="box">
+        Recuento de números
+      </li>
+      <li data-testid="number-sum" class="box">
+        Suma total de números
+      </li>
+      <li data-testid="word-length-average" class="box">
+        Longitud media de palabras
+      </li>
+    </ul>
+
+    <textarea name="user-input" placeholder="Ingresar texto"></textarea>
+      <button id="reset-button">Limpiar</button>
+  </body>
+  <footer>
+    <p>Developed by Paulina González</p>
+  </footer>
 </html>

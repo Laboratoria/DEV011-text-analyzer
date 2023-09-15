@@ -1,0 +1,80 @@
+
+textarea[name="user-input"]
+{
+width: 500px;
+height: 200px;
+padding: 10px;
+margin-bottom: 10px;
+border: 2px solid transparent;
+margin: 0 auto; /*me ayuda a centrar*/
+border-radius: 10px;
+}
+
+body {
+  display: flex;
+  font-family: Verdana;
+  flex-direction: column;
+}
+
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+header {
+  background-image: linear-gradient(
+    to right,
+    rgb(246, 124, 195),
+    rgb(253, 210, 210),
+    rgb(255, 101, 152)
+  ); /*linear -gradient, degradado de colores de fondo*/
+  height: 40px;
+  width: 50%;
+  padding: 40px;
+  border-radius: 10px; /*ayuda a redondear los bordes*/
+  text-align: center;
+  margin: 0 auto;
+  font-size: 100%;
+  position: relative;
+  color:rgb(80, 73, 73);
+}
+
+
+.box {
+  background: #fd81ae; 
+  padding: 01% 01% 01% 01%;
+  display: inline-block;
+  text-align: center;
+  margin-left: 20px;
+  width: 70;
+  border: 10px;
+  border-color: #da5151;
+  border-radius: 10px;
+  color: rgb(71, 63, 66);
+}
+
+ul {
+  margin-bottom: 05%;
+  display: flex;
+  text-align: center;
+}
+
+#reset-button {
+  border: 0;
+  background-image:linear-gradient( to right,
+  rgb(246, 124, 195),
+  rgb(253, 210, 210),
+  rgb(255, 101, 152) );
+  position: center;
+  font-size: 18px;
+  padding: 4px;
+  border-radius: 8px;
+  transition: .3s;
+  margin: 0 auto;
+  cursor: auto;
+}
+
+footer {
+  font-size: 1rem;
+}
