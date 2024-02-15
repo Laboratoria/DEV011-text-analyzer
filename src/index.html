@@ -1,37 +1,20 @@
 <!DOCTYPE html>
 <html>
-<section>
-<header>
-  <meta charset="utf-8">
-  <title>Analizador de texto</title>
-  <link rel="stylesheet" href="style.css" />
-  <h1>Analizador de texto</h1>
-</header>
-
-<body>
-
- 
-
-  <script src="index.js" type="module"></script>
-
-<textarea name="user-input"></textarea>
-<ul>
-  <li class="list" data-testid="word-count">Palabras: </li>
-  <li class="list" data-testid="character-count">Caracteres: </li>
-  <li class="list" data-testid="character-no-spaces-count">Caracteres sin espacios: </li>
-  <li class="list" data-testid="number-count"> Números: </li>
-  <li class="list" data-testid="number-sum"> Suma de números: </li>
-  <li class="list" data-testid="word-length-average"> Promedio longitud de palabras: </li>
-</ul>
-
-<button id="reset-button" type="submit">LIMPIAR   MÉTRICAS</button>
-
- 
-
-</body>
-
-<footer>
-  <p>Giselle Lopez</p>
-</footer>
-</section>
+  <head>
+    <meta charset="utf-8" />
+    <title>Text Analyzer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <header>
+    <h1 class="title">Text Analyzer</h1>
+  </header>
+  <body>
+      <textarea name="user-input"></textarea>
+      <div class="metricsContainerPrincipal"></div>
+      <button id="reset-button" type="submit">CLEAN METRICS</button>
+  </body>
+  <footer>
+    Created by Giselle Lopez
+  </footer>
 </html>
+<script src="index.js" type="module"></script>
