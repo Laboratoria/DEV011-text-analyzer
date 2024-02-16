@@ -28,7 +28,7 @@ width: 100%;
 
 }
 body {
-gap: 10px
+gap: 15px
 }
 
 .title {
@@ -97,5 +97,39 @@ align-items: center;
  padding: 0px 10px;
  display: flex;
  background-color: rgb(0, 0, 0, 0.7);
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .title {
+    margin-top: 30px;
+    font-size: 50px;
+  }
+  .metricsContainerPrincipal {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(70px, auto);
+  }
+  textarea[name="user-input"] {
+    height: 400px;
+  }
+  #reset-button {
+     font-size: 25px;
+
+  } 
+}
+
+@media only screen and (max-width: 768px) {
+  .title {
+    font-size: 30px;
+  }
+  .metricsContainerPrincipal {
+    grid-template-columns: repeat(2, 0.6fr);
+  }
+  .metric-container {
+    font-size: 7px;
+    text-align: center;
+  }
+  textarea[name="user-input"] {
+    height: 220px;
+  }
 }
 
