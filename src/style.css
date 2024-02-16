@@ -17,9 +17,9 @@ html {
   background: linear-gradient(45deg,palegoldenrod,pink,palegreen,skyblue);
   background-size: 400% 400%;
   position: relative;
-  animation: changeColors 10s ease-in-out infinite;
+  animation: changeColors 10s ease-in-out infinite; height: 100%;
 } 
-body, header, footer {
+body, header, footer, main {
 display: flex;
 place-content: center;
 align-items: center;
@@ -28,9 +28,13 @@ width: 100%;
 
 }
 body {
-gap: 15px
+height: 100%;
+gap: 10px;
 }
-
+main{
+gap: 15px;
+height: 70%;
+}
 .title {
  color: black;
  font-size: 40px;
@@ -40,6 +44,10 @@ margin: 15px 0;
 footer {
   font-family: fontPrincipal;
   font-size: 15px;
+  height: 15%;
+}
+header {
+  height: 15%;
 }
 
 textarea[name="user-input"] {
@@ -105,16 +113,24 @@ align-items: center;
     font-size: 50px;
   }
   .metricsContainerPrincipal {
+    height: 30%;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: minmax(70px, auto);
   }
+  .metric-container {
+    font-size: 12px;
+  text-align: center;}
   textarea[name="user-input"] {
-    height: 400px;
+    height: 70%;
   }
   #reset-button {
-     font-size: 25px;
+     font-size: 35px;
 
   } 
+  footer {
+  font-size: 25px;
+  }
+  
 }
 
 @media only screen and (max-width: 768px) {
