@@ -1,15 +1,18 @@
 *{
     margin:0px;
 }
-body{
+body, html{
     background-color: honeydew;
+    height: 100%;
+    overflow-y: hidden;
 }
+
 header {
     margin: 10px 5px 20px 5px;
     text-align: center;
     font-family: 'Kodchasan';
     color:#EC5B68;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 ul {
@@ -23,16 +26,19 @@ ul {
 }
 
 .metricas {
-    margin: 10px;
+    display: flex;
+    align-items: center;
+    margin: 5px;
     padding: 10px;
     width: 60%;
+    height: 7px;
     border: 0px;
     color:honeydew;
     border-radius: 25px;
     background-color: #C978B2;
     text-align: left;
     font-family: 'Coda';
-    font-size: 14px;
+    font-size: 13px;
 }
 
 li[data-testid="character-count"], li[data-testid="word-length-average"] {
@@ -47,7 +53,7 @@ li[data-testid="word-count"], li[data-testid="number-sum"] {
 textarea[name="user-input"] {
     display: block;
     padding: 23px;
-    width: 900px;
+    width: 62%;
     margin: 20px auto;
     border: ridge; /*efecto 3D al borde*/
     border-color: #C978B2;
@@ -60,17 +66,21 @@ textarea[name="user-input"]:focus{
 color: #C42460;
 }
 
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+
 #reset-button {
     display: block;
     padding: 5px;
     width: 200px;
-    margin: 20px auto;
     height: 40px;
     border: none;
     border-radius: 25px;
     background-color: #F5CD49;
     font-family: 'Coda';
-    font-size: 20px;
+    font-size: 18px;
     color: #1c0d02;
     box-shadow: 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -81,8 +91,8 @@ color: #C42460;
 }
 
 footer {
-    position:sticky;
-    margin-bottom: 0;
+    position:absolute;
+    bottom: 0;
     padding: 10px 0;
     width: 100%;    
     background-color: #3A8185;
