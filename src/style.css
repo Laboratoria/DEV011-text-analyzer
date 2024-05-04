@@ -1,0 +1,58 @@
+h1 {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header, footer {
+  text-align: center;
+}
+
+#recuadros-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.cuadro {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: large;
+  background-color: rgb(6, 122, 122);
+  color: azure;
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+  padding: 25px;
+  border: 5px solid black;
+}
+
+ul {
+  list-style-type: none; /* Elimina los puntos de la lista */
+  padding: 0;
+  display:flex;
+  flex-wrap: wrap;
+}
+
+
+textarea[name="user-input"] {
+  margin: 20px auto; /* Ajusta el margen superior e inferior */
+  background-color: rgb(224, 240, 240);
+  width: 800px;
+  height: 200px;
+  color: rgb(2, 2, 1);
+}
+
+#reset {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: medium;
+  background-color: rgb(6, 122, 122);
+  color: azure;
+  width: 100px;
+  height: 50px;
+}
+footer{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
